@@ -21,11 +21,15 @@ class AdminMiddleware
                 return $next($request);
             }
             else{
-                return redirect('/home')->with('statut', 'acces refuser car vous n etes pas admin');
+                return redirect('/private')->with('statut', 'acces refuser car vous n etes pas admin');
             }
         }
         else{
-            return redirect('/home')->with('statut', 'Please Login first');
+            return redirect('/private')->with('statut', 'Please Login first');
         }
+
+        /*if ($request->user()->role == $role) return $next($request);
+
+        abort(403);*/
     }
 }

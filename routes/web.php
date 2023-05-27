@@ -23,7 +23,7 @@ Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');*/
 
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->middleware('auth')->name('home');
+Route::get('/home', [\App\Http\Controllers\Admin\FrontendController::class, 'index'])->middleware('auth')->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -42,7 +42,8 @@ require __DIR__.'/auth.php';
 });*/
 
 Route::middleware(['auth', 'role:admin'])->group(function (){
-    Route::get('/private', function (){
-       return view('dashboardadmin') ;
-    });
+    Route::get('/private', [App\Http\Controllers\Admin\FrontendController::class, 'index'])->name('admin.index');
+    Route::get('categories', [App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin.category.index');
+    Route::get('add-category', [App\Http\Controllers\Admin\CategoryController::class, 'add'])->name('admin.category.add');
+    Route::post('insert-category', [App\Http\Controllers\Admin\CategoryController::class, 'insert']);
 });
