@@ -56,10 +56,9 @@
                             <x-dropdown-link  :href="route('profile.edit')">
                                 {{ __('Profile') }}
                             </x-dropdown-link>
-                            <a class="dropdown-item" href="#">Settings</a>
                             <div class="dropdown-divider"></div>
                             <!-- Authentication -->
-                            <form method="POST" action="{{ route('logout') }}">
+                            <form class="dropdown-item" method="POST" action="{{ route('logout') }}">
                                 @csrf
 
                                 <x-dropdown-link :href="route('logout')"

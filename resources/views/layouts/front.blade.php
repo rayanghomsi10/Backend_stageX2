@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/footstyle.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.default.min.css')}}">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -42,24 +44,29 @@
 
 @include('layouts.inc.frontendfooter')
 </div>--}}
+<div class="wrapper">
 
-{{--<div class="main-panel">--}}
-{{--    @include('layouts.inc.frontnavbar')--}}
+<div class="main-panel">
+    @include('layouts.inc.frontnavbar')
 
-{{--    <div class="content">--}}
-{{--        @yield('content')--}}
-{{--    </div>--}}
-    @include('layouts.inc.frontendfooter')
-{{--</div>--}}
-{{--</div>--}}
+    <div class="content">
+        @yield('content')
+    </div>
+{{--    @include('layouts.inc.frontendfooter')--}}
+</div>
+</div>
 <script src="{{asset('frontend/js/bootstrap.bundle.min.js')}}" ></script>
+<script src="{{asset('frontend/js/jquery-3.7.0.min.js')}}" ></script>
+<script src="{{asset('frontend/js/owl.carousel.js')}}" ></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-{{--@if(session('status'))--}}
-{{--    <script>--}}
-{{--        swal("{{session('status')}}");--}}
-{{--    </script>--}}
-{{--@endif--}}
+@if(session('status'))
+    <script>
+        swal("{{session('status')}}");
+    </script>
+@endif
 @yield('scripts')
 </body>
 </html>

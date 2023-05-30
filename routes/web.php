@@ -24,6 +24,8 @@ use App\Http\Controllers\HomeController;
 })->middleware(['auth', 'verified'])->name('dashboard');*/
 
 Route::get('/', [\App\Http\Controllers\Frontend\FrontendController::class, 'index']);
+Route::get('category', [\App\Http\Controllers\Frontend\FrontendController::class, 'category']);
+Route::get('view-category/{slug}', [\App\Http\Controllers\Frontend\FrontendController::class, 'viewcategory']);
 
 Route::get('/home', [\App\Http\Controllers\Admin\FrontendController::class, 'index'])->middleware('auth')->name('home');
 

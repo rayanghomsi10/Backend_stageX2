@@ -1,5 +1,4 @@
 
-<footer>
 <div class="footer">
     <footer>
         <div class="waves">
@@ -22,4 +21,3 @@
         <p>realiser par Rayan</p>
     </footer>
 </div>
-</footer>

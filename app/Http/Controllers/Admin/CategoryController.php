@@ -76,8 +76,8 @@ class CategoryController extends Controller
         $category->name = $request->input('name');
         $category->slug = $request->input('slug');
         $category->description = $request->input('description');
-        $category->status = $request->input('status') == TRUE? '1' : '0';
-        $category->Popular = $request->input('Popular') == TRUE? '1' : '0';
+        $category->status = $request->input('status') == TRUE ? '1' : '0';
+        $category->Popular = $request->input('Popular') == TRUE ? '1' : '0';
         $category->meta_title = $request->input('meta_title');
         $category->meta_keyword = $request->input('meta_keyword');
         $category->meta_descrip = $request->input('meta_descrip');
