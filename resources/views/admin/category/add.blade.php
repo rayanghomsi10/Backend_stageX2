@@ -6,7 +6,7 @@
             <h4>Add category</h4>
         </div>
         <div class="card-body">
-            <form action="{{url('insert-category')}}" method="POST">
+            <form action="{{url('insert-category')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                <div class="row">
                    <div class="col-md-6 md-3" >
@@ -45,7 +45,7 @@
                        <input type="file" name="image" class="form-control">
                    </div>
                    <div class="col-md-12">
-                       <button type="submit" class="btn btn-primary">Subnit</button>
+                       <button type="submit" class="btn btn-primary">Submit</button>
                    </div>
                </div>
             </form>

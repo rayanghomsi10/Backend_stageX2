@@ -9,25 +9,34 @@
         </a></div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="nav-item active  ">
+            <li class="nav-item {{\Illuminate\Support\Facades\Request::is('private') ? 'active':'' }}  ">
                 <a class="nav-link" href="/private">
                     <i class="material-icons"><ion-icon name="today-outline"></ion-icon></i>
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item  {{ \Illuminate\Support\Facades\Request::is('categories') ? 'active':'' }}">
                 <a class="nav-link" href="{{url('categories')}}">
                     <i class="material-icons"><ion-icon name="person-outline"></ion-icon></i>
                     <p>Category</p>
-                    <x-dropdown-link  :href="route('admin.category.add')">
-                        {{ __('add-category') }}
-                    </x-dropdown-link>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">
-                    <i class="material-icons"><ion-icon name="clipboard-outline"></ion-icon></i>
-                    <p>Table List</p>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('add-category') ? 'active':'' }} ">
+                <a class="nav-link" href="{{url('add-category')}}">
+                    <i class="material-icons"><ion-icon name="person-outline"></ion-icon></i>
+                    <p>add-Category</p>
+                </a>
+            </li>
+            <li class="nav-item  {{ \Illuminate\Support\Facades\Request::is('products') ? 'active':'' }}">
+                <a class="nav-link" href="{{url('products')}}">
+                    <i class="material-icons"><ion-icon name="person-outline"></ion-icon></i>
+                    <p>Products</p>
+                </a>
+            </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('add-products') ? 'active':'' }} ">
+                <a class="nav-link" href="{{url('add-products')}}">
+                    <i class="material-icons"><ion-icon name="person-outline"></ion-icon></i>
+                    <p>add-Products</p>
                 </a>
             </li>
 

@@ -6,7 +6,7 @@
             <h4>Category page</h4>
         </div>
         <div class="card-body">
-            <div class="table">
+            <table class="table-bordered table table-striped">
                 <thead>
                 <tr>
                     <th>Id</th>
@@ -22,15 +22,16 @@
                     <td>{{$item->id}}</td>
                     <td>{{$item->name}}</td>
                     <td>{{$item->description}}</td>
-                    <td><img src="{{asset('asset/uploids/category/'.$item->image)}}" alt="image"> </td>
+                    <td><img src="{{asset('./asset/uploids/category/'.$item->image)}}" alt="image" class="cate-image"> </td>
                     <td>
-                        <div class="btn btn-primary">Edit</div>
-                        <div class="btn btn-danger">Delete</div>
+                        <a href="{{url('edit-category/'.$item->id)}}" class="btn btn-primary">Edit</a>
+                        <a href="{{url('delete-category/'.$item->id)}}" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                 @endforeach
                 </tbody>
-            </div>
+
+            </table>
 
         </div>
     </div>
