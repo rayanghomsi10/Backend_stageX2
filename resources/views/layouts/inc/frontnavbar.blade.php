@@ -9,6 +9,7 @@
                 <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                 <a class="nav-link" href="{{url('category')}}">Categories</a>
 
+
                 @guest
                     @if (Route::has('login'))
                             @auth
@@ -40,6 +41,7 @@
                                 <x-dropdown-link :href="route('profile.edit')">
                                     {{ __('Profile') }}
                                 </x-dropdown-link>
+
 
                                 <!-- Authentication -->
                                 <form method="POST" action="{{ route('logout') }}">

@@ -25,9 +25,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [\App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 Route::get('category', [\App\Http\Controllers\Frontend\FrontendController::class, 'category']);
-Route::get('view-category/{slug}', [\App\Http\Controllers\Frontend\FrontendController::class, 'viewcategory']);
+Route::get('viewcategory/{id}', [\App\Http\Controllers\Frontend\FrontendController::class, 'viewcategory']);
+Route::get('category/{cate_slug}/{prod_slug}', [\App\Http\Controllers\Frontend\FrontendController::class, 'productview']);
 
-Route::get('/home', [\App\Http\Controllers\Admin\FrontendController::class, 'index'])->middleware('auth')->name('home');
+Route::get('/home', [\App\Http\Controllers\Admin\FrontendController::class, 'index'])->middleware('auth')->name('home')->name('frontend.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

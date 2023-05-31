@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.default.min.css')}}">
 
+{{--  Font awesome  --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -44,9 +47,6 @@
 
 @include('layouts.inc.frontendfooter')
 </div>--}}
-<div class="wrapper">
-
-<div class="main-panel">
     @include('layouts.inc.frontnavbar')
 
     <div class="content">

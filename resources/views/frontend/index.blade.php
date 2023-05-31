@@ -35,9 +35,10 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
         <div class="container">
             <div class="row">
                 <h1>Categories Tendances</h1>
-                <div class="owl-carousel featured-carousel owl-theme">
+                <div class="owl-carousel featured-carousel ">
                     @foreach($trending_category as $tcate)
                         <div class="item" style="border: 2px solid; border-radius: 10px">
+                            <a href="{{url('viewcategory/'.$tcate->id)}}">
                             <div class="card">
                                 <img src="{{asset('asset/uploids/category/'.$tcate->image)}}" style="width: 320px;height: 300px; border-radius: 10px;" alt="image produits">
                                 <div class="card-body">
@@ -48,6 +49,7 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
                                     </p>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>

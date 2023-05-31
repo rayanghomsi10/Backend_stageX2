@@ -13,7 +13,7 @@
                     <div class="row">
                     @foreach($category as $cate)
                         <div class="col-md-4 mb-3">
-                            <a href="{{url('view-category/'.$cate->id)}}">
+                            <a href="{{url('viewcategory/'.$cate->id)}}">
                                 <div class="card">
                                     <img src="{{asset('asset/uploids/category/'.$cate->image)}}" style="width: 420px;height: 300px" alt="image categorie">
                                     <div class="card-body">

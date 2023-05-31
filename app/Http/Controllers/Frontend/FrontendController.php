@@ -22,17 +22,39 @@ class FrontendController extends Controller
         return view('frontend.category', compact('category'));
     }
 
-    public function viewcategory($slug)
+    public function viewcategory($id)
     {
-        if (Category::where('slug', $slug)->exists())
+        if (Category::where('id', $id)->exists())
         {
-            $category = Category::where('slug', $slug)->first();
+//            $category = Category::with('products')->get();
+            $category = Category::with('products')->where('id', $id)->first();
+
             $products = Product::where('cate_id', $category->id)->where('status', '0')->get();
             return view('frontend.products.index', compact('category', 'products'));
 
         }
         else{
-            return redirect('/')->with('status', "Categorie vide");
+            return redirect('category')->with('status', "Categorie vide");
         }
     }
+
+
+    public function productview($cate_slug, $prod_slug)
+    {
+        if (Category::where('slug', $cate_slug)->exists())
+        {
+            if (Product::where('slug', $prod_slug)->exists())
+            {
+                $products = Product::where('slug', $prod_slug)->first();
+                return view('frontend.products.view', compact('products'));
+            }
+            else{
+                return redirect('category')->with('status', 'Lien mort');
+            }
+        }
+        else{
+            return redirect('category')->with('status', 'Lien mort');
+        }
+    }
+
 }
