@@ -27,6 +27,14 @@ Route::get('/', [\App\Http\Controllers\Frontend\FrontendController::class, 'inde
 Route::get('category', [\App\Http\Controllers\Frontend\FrontendController::class, 'category']);
 Route::get('viewcategory/{id}', [\App\Http\Controllers\Frontend\FrontendController::class, 'viewcategory']);
 Route::get('category/{cate_slug}/{prod_slug}', [\App\Http\Controllers\Frontend\FrontendController::class, 'productview']);
+Route::post('add-to-cart', [\App\Http\Controllers\Frontend\CartController::class, 'addproduct']);
+Route::post('delete-cart-item', [\App\Http\Controllers\Frontend\CartController::class, 'delete_prod']);
+
+
+Route::middleware(['auth'])->group(function (){
+    Route::get('cart', [\App\Http\Controllers\Frontend\CartController::class, 'viewcart']);
+});
+
 
 Route::get('/home', [\App\Http\Controllers\Admin\FrontendController::class, 'index'])->middleware('auth')->name('home')->name('frontend.index');
 

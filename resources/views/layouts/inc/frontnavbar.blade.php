@@ -8,9 +8,11 @@
             <div class="navbar-nav ms-auto">
                 <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                 <a class="nav-link" href="{{url('category')}}">Categories</a>
+                <a class="nav-link" href="{{url('cart')}}">Panier</a>
 
 
-                @guest
+
+            @guest
                     @if (Route::has('login'))
                             @auth
                                 <a href="{{ url('/home') }}" class="nav-link" >Dashboard</a>
