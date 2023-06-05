@@ -29,10 +29,13 @@ Route::get('viewcategory/{id}', [\App\Http\Controllers\Frontend\FrontendControll
 Route::get('category/{cate_slug}/{prod_slug}', [\App\Http\Controllers\Frontend\FrontendController::class, 'productview']);
 Route::post('add-to-cart', [\App\Http\Controllers\Frontend\CartController::class, 'addproduct']);
 Route::post('delete-cart-item', [\App\Http\Controllers\Frontend\CartController::class, 'delete_prod']);
+Route::post('update-cart', [\App\Http\Controllers\Frontend\CartController::class, 'updatecart']);
 
 
 Route::middleware(['auth'])->group(function (){
     Route::get('cart', [\App\Http\Controllers\Frontend\CartController::class, 'viewcart']);
+    Route::get('checkout', [\App\Http\Controllers\Frontend\CheckoutController::class, 'index']);
+    Route::post('place-order', [\App\Http\Controllers\Frontend\CheckoutController::class, 'placeorder']);
 });
 
 
@@ -47,12 +50,12 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
-/*Route::middleware(['auth', 'isAdmin'])->group(function (){
-    Route::get('/dashboard', function (){
+Route::middleware(['auth', 'isAdmin'])->group(function (){
+    Route::get('/private', function (){
         return "Admin";
     });
 
-});*/
+});
 
 Route::middleware(['auth', 'role:admin'])->group(function (){
     Route::get('/private', [App\Http\Controllers\Admin\FrontendController::class, 'index'])->name('admin.index');

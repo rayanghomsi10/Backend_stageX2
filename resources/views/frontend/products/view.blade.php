@@ -62,9 +62,13 @@
                             </div>
                             <div class="col-md-10">
                                 <br/>
-                                <button type="button" class="btn btn-success  me-3 float-start">Wishlist <ion-icon name="heart-outline"></ion-icon></button>
-                                <button type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></button>
+                                @if($products->qty > 0)
+                                    <label class="badge bg-success">En stock</label>
+                                    <button type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></button>
+                                @else
 
+                                @endif
+                                <button type="button" class="btn btn-success  me-3 float-start">Wishlist <ion-icon name="heart-outline"></ion-icon></button>
                             </div>
                         </div>
                     </div>
@@ -118,7 +122,7 @@
                     },
                     error: function (response) {
                         // Affiche un message d'erreur
-                        alert(response.responseJSON.error);
+                        swal("",response.status, "error");
                     }
 
 
