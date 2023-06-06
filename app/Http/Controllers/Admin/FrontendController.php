@@ -13,7 +13,7 @@ class FrontendController extends Controller
             $role=Auth()->user()->role;
 
             if ($role=='user'){
-                return view('dashboard');
+                return view('admin.index');
             }
             elseif ($role=='admin'){
                 return view('admin.index');

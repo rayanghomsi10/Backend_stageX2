@@ -58,12 +58,7 @@
                             </x-slot>
                         </x-dropdown>
                     </div>
-
                 @endguest
-
-
-
-
         </div>
     </div>
     </div>
