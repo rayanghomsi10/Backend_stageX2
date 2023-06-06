@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;
 
 class FrontendController extends Controller
@@ -13,10 +14,10 @@ class FrontendController extends Controller
             $role=Auth()->user()->role;
 
             if ($role=='user'){
-                return view('admin.index');
+                return redirect('/')->with('status', "Bien connecter");
             }
             elseif ($role=='admin'){
-                return view('admin.index');
+                return view('admin.index')->with('status', "Bienvenue Administrateur");
             }
             else{
                 return redirect()->back();
