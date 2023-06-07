@@ -1,63 +1,61 @@
+## My Laravel project
+
+This is the creation of an e-commerce site
 
 
-## Mon projet Laravel
+## Facility
 
-Il s'agit de la creation d'un site de commerce en ligne
-
-
-## Installation
-
-1. Cloner le porjet
+1. Clone the project
 
 https://github.com/rayanghomsi10/Backend_stageX2/tree/feature/front
 
-2. Installation des dependances
+2. Installing dependencies
 
-Vous devez taper les commandes suivante dans le terminal
+You need to type the following commands in the terminal
 
-- cd "la redirection du projet"
-- composer install
+- cd "project redirection"
+- composer installation
 - npm install
 - npm run dev
 
-3. Configurer la base de données dans le fichier .env
+3. Configure the database in the .env file
 
 - DB_CONNECTION = mysql
-- DB_HOST = 127.0.0.1
-- DB_DATABASE = "le nom de la base de donnée que vous allez utilisé"
-- DB_USERNAME = "nom de l'utilisateur dans votre base de donnée "
-- BD_PASSWORD = "ne mettez rien s'il y'en a pas "
+  -DB_HOST=127.0.0.1
+- DB_DATABASE = "the name of the database you are going to use"
+- DB_USERNAME = "username in your database"
+- BD_PASSWORD = "do not put anything if there is none"
 
-4. Lancer les migration
+4. Start migrations
 
-on les lance avec la commande :
+on them with the command:
 
-- php artisan migrate
+- php craft migration
 
-5. Remplisser la base de donnée avec les elelemts present dans le code
+5. Fill the database with the elements present in the code
 
-on les lance avec la commande :
+on them with the command:
 
 - php artisan db:seed
 
-## Configuration
+## Setup
 
-Le projet utilise le fichier .env pour sa configuration. Assurez-vous de créer un fichier .env à partir du fichier .env.example et de configurer les variables d'environnement en conséquence.
+The project uses the .env file for its configuration. Be sure to create an .env file from the .env.example file and configure the environment variables accordingly.
 
-## Utilisation
+## Use
 
-Pour lancer le projet, exécutez la commande suivante :
+To launch the project, run the following command:
 
-- php artisan serve
+- php craft service
 
-Vous pouvez ensuite accéder à l'application à l'adresse http://localhost:8000.
+You can then access the application at http://localhost:8000.
 
-## Quelques informations
+## Some info
 
-Les informations de l'administrateur par defaut sont :
-- email : Ray.g@gmail.com
-- password : 12345678
+The default administrator information is:
+- email: Ray.g@gmail.com
+- password: 12345678
 
-Les informations de l'utilisateur deja enregistré sont :
-- email : claude.r@gmail.com
-- password : 12345678
+User information is already saved:
+- email: claude.r@gmail.com
+- password: 12345678
