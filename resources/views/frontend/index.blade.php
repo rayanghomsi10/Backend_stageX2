@@ -6,24 +6,32 @@
 
 @section('content')
     @include('layouts.inc.slider')
-    <div class="py-5" style="background-color: #21D4FD;
-background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-">
+    <div class="py-5" style="background-color: #6486ff">
         <div class="container" >
             <div class="row">
                 <h1>Produits Vedettes</h1>
                 <div class="owl-carousel featured-carousel owl-theme">
                         @foreach($featured_products as $prod)
-                            <div class="item" style="border: 2px solid; border-radius: 10px">
-                                <div class="card" >
-                                    <img src="{{asset('asset/uploids/products/'.$prod->image)}}" style="width: 320px;height: 300px; border-radius: 10px;" alt="image produits">
-                                    <div class="card-body">
-                                        <h5>{{$prod->name}} </h5>
-                                        <br>
-                                        <span class="float-start">{{$prod->selling_price}} XAF</span>
-                                        <span class="float-end" style="text-decoration: line-through"> {{$prod->original_price}} XAF</span>
+                            <div class="item item-container">
+                                <a href="{{ url('category/'.$prod->category->slug.'/'.$prod->slug) }}">
+                                    <div class="body-container" >
+                                        <div class="img-container">
+                                            <img src="{{asset('asset/uploids/products/'.$prod->image)}}" style="width: 320px;height: 300px; border-radius: 10px;" alt="image produits">
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="body-container">
+                                            <div class="even-info">
+                                                <h5>{{$prod->name}} </h5>
+                                                <div class="separator"></div>
+                                                <p class="float-start info">{{$prod->selling_price}} XAF</p>
+                                                <p class="float-end info" style="text-decoration: line-through"> {{$prod->original_price}} XAF</p>
+                                                <div class="additional-info">
+                                                    <p class="info">{{ $prod->small_description }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         @endforeach
                 </div>
@@ -37,16 +45,23 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
                 <h1>Categories Tendances</h1>
                 <div class="owl-carousel featured-carousel ">
                     @foreach($trending_category as $tcate)
-                        <div class="item" style="border: 2px solid; border-radius: 10px">
-                            <a href="{{url('viewcategory/'.$tcate->id)}}">
-                            <div class="card">
-                                <img src="{{asset('asset/uploids/category/'.$tcate->image)}}" style="width: 320px;height: 300px; border-radius: 10px;" alt="image produits">
-                                <div class="card-body">
-                                    <h5>{{$tcate->name}} </h5>
-                                    <br>
-                                    <p>
-                                        {{$tcate->description}}
-                                    </p>
+                        <div class="item item-container">
+                                <a href="{{url('viewcategory/'.$tcate->id)}}">
+                            <div class="body-container">
+                                <div class="img-container">
+                                    <img src="{{asset('asset/uploids/category/'.$tcate->image)}}" style="width: 320px;height: 300px; border-radius: 10px;" alt="image produits">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="body-container ">
+                                    <div class="even-info">
+                                        <p class="title">{{$tcate->name}} </p>
+                                        <div class="separator"></div>
+                                        <div class="additional-info">
+                                            <p class="info ">
+                                                {{$tcate->description}}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             </a>
@@ -56,6 +71,7 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
             </div>
         </div>
     </div>
+    @include('layouts.inc.frontendfooter')
 @endsection
 
 @section('scripts')
@@ -80,5 +96,7 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     </script>
 
 @endsection
+
+
 
 
