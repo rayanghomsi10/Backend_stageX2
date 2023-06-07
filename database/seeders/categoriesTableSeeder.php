@@ -70,7 +70,7 @@ class categoriesTableSeeder extends Seeder
                 'meta_descrip' => 'Montre_connectée de marque',
             ],
             [
-                'name' => 'ecouteur BLuetooth',
+                'name' => 'Ecouteur bluetooth',
                 'slug' => 'ecouteur_BLuetooth',
                 'description' => 'Les écouteurs Bluetooth sont disponibles dans une variété de formes et de tailles, y compris des écouteurs intra-auriculaires, des écouteurs sans fil et des écouteurs à réduction de bruit. Ils sont de plus en plus populaires en raison de leur commodité et de leur qualité sonore améliorée.',
                 'status' => '0',

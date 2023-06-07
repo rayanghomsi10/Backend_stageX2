@@ -24,4 +24,8 @@ class FrontendController extends Controller
             }
         }
     }
+    public function isAdmin()
+    {
+        return $this->roles()->where('name', 'admin')->exists();
+    }
 }

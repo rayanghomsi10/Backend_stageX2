@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/custom.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/footstyle.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/evenstyle.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.default.min.css')}}">
 

@@ -19,7 +19,7 @@
                                     <div class="card-body">
                                         <h5>{{$cate->name}} </h5>
                                         <br>
-                                        <p>
+                                        <p style="height: 180px">
                                             {{$cate->description}}
                                         </p>
                                     </div>

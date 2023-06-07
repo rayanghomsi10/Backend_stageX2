@@ -8,14 +8,21 @@
             <div class="navbar-nav ms-auto">
                 <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                 <a class="nav-link" href="{{url('category')}}">Categories</a>
-                <a class="nav-link" href="{{url('cart')}}">Panier</a>
+                <a class="nav-link" middleware="role" href="{{url('cart')}}">Panier</a>
+               {{-- @auth
+                    @if (Route::hasRole('admin'))
+                        <li><a href="/dashboard">Dashboard</a></li>
+                    @endif
+                @endauth--}}
 
 
 
             @guest
                     @if (Route::has('login'))
                             @auth
-                                <a href="{{ url('/home') }}" class="nav-link" >Dashboard</a>
+                            @can('admin')
+                                <a class="nav-link" href="{{ url('/private') }}">Admin</a>
+                            @endcan
                             @else
                                 <a href="{{ route('login') }}" class="nav-link" >Log in</a>
 

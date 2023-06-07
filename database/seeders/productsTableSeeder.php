@@ -69,7 +69,7 @@ class productsTableSeeder extends Seeder
             'cate_id' => '2',
             'name' => 'MSI Alpha15',
             'slug' => 'MSI_Alpha15',
-            'small_description' => 'Le MSI Alpha 15 est un ordinateur portable de jeu puissant équipé d un processeur AMD Ryzen et d une carte graphique AMD Radeon RX 5500M. Il dispose également d un écran de 15,6 pouces avec une fréquence de rafraîchissement de 144 Hz, offrant une expérience de jeu fluide et immersive. Le MSI Alpha 15 est un choix idéal pour les joueurs qui cherchent un ordinateur portable de jeu performant à un prix abordable.',
+            'small_description' => 'Le MSI Alpha 15 est un ordinateur portable de jeu puissant équipé d un processeur AMD Ryzen et d une carte graphique AMD Radeon RX 5500M. Il dispose également d un écran de 15,6 pouces avec une fréquence de rafraîchissement de 144 Hz, offrant une expérience de jeu fluide et immersive.',
             'description' => 'Le MSI Alpha 15 est un ordinateur portable de jeu puissant équipé d un processeur AMD Ryzen et d une carte graphique AMD Radeon RX 5500M. Il dispose également d un écran de 15,6 pouces avec une fréquence de rafraîchissement de 144 Hz, offrant une expérience de jeu fluide et immersive. Le MSI Alpha 15 est un choix idéal pour les joueurs qui cherchent un ordinateur portable de jeu performant à un prix abordable.',
             'original_price' => '1390000',
             'selling_price' => '1350000',
@@ -169,7 +169,7 @@ class productsTableSeeder extends Seeder
             ],
             [
                 'cate_id' => '5',
-                'name' => 'apple watch s6 steel',
+                'name' => 'Apple watch s6 steel',
                 'slug' => 'apple_watch-s6_steel',
                 'small_description' => 'L Apple Watch Series 6 en acier est une montre connectée haut de gamme avec un design élégant et une construction en acier inoxydable durable. Elle est équipée d un écran Retina always-on et d un capteur de fréquence cardiaque, idéale pour les utilisateurs exigeants.',
                 'description' => 'L Apple Watch Series 6 en acier est une montre connectée haut de gamme offrant un design élégant et une construction en acier inoxydable durable. Elle est équipée d un écran Retina always-on, d un capteur de fréquence cardiaque, d un GPS intégré et d une autonomie de batterie allant jusqu à 18 heures. Avec sa connectivité cellulaire en option et ses nombreuses fonctionnalités de santé et de fitness, cette montre est idéale pour les utilisateurs exigeants qui cherchent un produit haut de gamme.',
@@ -186,7 +186,7 @@ class productsTableSeeder extends Seeder
             ],
             [
                 'cate_id' => '5',
-                'name' => 'apple watch se',
+                'name' => 'Apple watch se',
                 'slug' => 'apple_watch_se',
                 'small_description' => 'L Apple Watch SE est une montre connectée de milieu de gamme avec des fonctionnalités avancées telles que le suivi de la condition physique et la connectivité GPS. Elle est équipée d un écran Retina toujours allumé et est idéale pour les utilisateurs qui cherchent un produit de qualité à un prix abordable.',
                 'description' => 'L Apple Watch SE est une montre connectée de milieu de gamme avec des fonctionnalités avancées telles que le suivi de la condition physique et la connectivité GPS. Elle est équipée d un écran Retina toujours allumé et est idéale pour les utilisateurs qui cherchent un produit de qualité à un prix abordable.',
@@ -203,7 +203,7 @@ class productsTableSeeder extends Seeder
             ],
             [
                 'cate_id' => '5',
-                'name' => 'samsung galaxy watch5pro',
+                'name' => 'Samsung galaxy watch5pro',
                 'slug' => 'samsung_galaxy_watch5pro',
                 'small_description' => 'La Samsung Galaxy Watch3 est une smartwatch haut de gamme avec un écran AMOLED circulaire, des fonctionnalités de suivi de la condition physique, de messagerie et d intégration de smartphone, ainsi qu une autonomie de la batterie pouvant durer jusqu à deux jours.',
                 'description' => 'La Samsung Galaxy Watch3 est une smartwatch haut de gamme qui offre une gamme de fonctionnalités pour le suivi de la condition physique, la messagerie et l intégration de smartphone. Elle dispose d un écran AMOLED circulaire avec une lunette rotative pour la navigation et est disponible en deux tailles (41mm et 45mm) et en divers finitions. La montre peut surveiller la fréquence cardiaque, les niveaux d oxygène dans le sang et le sommeil, et offre une gamme de modes de suivi d entraînement. Elle dispose également de Samsung Pay, d assistants vocaux et d une connectivité LTE (sur certains modèles). L autonomie de la batterie peut durer jusqu à deux jours, selon l utilisation.',
@@ -220,7 +220,7 @@ class productsTableSeeder extends Seeder
             ],
             [
                 'cate_id' => '6',
-                'name' => 'bud2pro',
+                'name' => 'Bud2pro',
                 'slug' => 'bud2pro',
                 'small_description' => 'la deuxième génération d écouteurs sans fil d Apple, offrant une qualité sonore améliorée, une connexion Bluetooth 5.0 plus rapide et une autonomie de batterie allant jusqu à 5 heures. Ils sont équipés de la commande vocale Siri et sont résistants à l eau et à la transpiration, ce qui les rend idéaux pour une utilisation lors de séances d entraînement.',
                 'description' => 'la deuxième génération d écouteurs sans fil d Apple, offrant une qualité sonore améliorée et une connexion Bluetooth 5.0 plus rapide et plus stable. Les AirPods 2 sont équipés de la commande vocale Siri, et offrent une autonomie de batterie allant jusqu à 5 heures d écoute et jusqu à 24 heures avec l étui de charge. Ils sont également résistants à l eau et à la transpiration, ce qui les rend idéaux pour une utilisation lors de séances d entraînement.',
@@ -237,7 +237,7 @@ class productsTableSeeder extends Seeder
             ],
             [
                 'cate_id' => '6',
-                'name' => 'airspods',
+                'name' => 'Airspods',
                 'slug' => 'airspods',
                 'small_description' => 'Les AirPods Pro sont des écouteurs sans fil haut de gamme avec une qualité sonore exceptionnelle, une réduction active du bruit et une autonomie de batterie allant jusqu à 4,5 heures. Ils sont résistants à l eau et à la transpiration et disposent de la technologie de transparence pour rester conscient de l environnement extérieur.',
                 'description' => 'Les AirPods Pro sont des écouteurs sans fil haut de gamme qui offrent une qualité sonore exceptionnelle et une réduction active du bruit pour une expérience d écoute immersive. Ils sont dotés de la technologie de transparence pour permettre de rester conscient de l environnement extérieur, et sont résistants à l eau et à la transpiration. Avec une autonomie de batterie allant jusqu à 4,5 heures, et jusqu à 24 heures avec l étui de charge, les AirPods Pro sont un excellent choix pour les utilisateurs exigeants.',
@@ -254,7 +254,7 @@ class productsTableSeeder extends Seeder
             ],
             [
                 'cate_id' => '6',
-                'name' => 'black_buds live',
+                'name' => 'Black_buds live',
                 'slug' => 'black_buds_live',
                 'small_description' => 'des écouteurs sans fil haut de gamme conçus pour offrir une expérience d écoute supérieure avec une qualité sonore exceptionnelle, une réduction active du bruit et une autonomie de batterie allant jusqu à 20 heures. Ils sont dotés de coussinets d oreille doux et confortables et d un bandeau en maille respirant pour un port prolongé.',
                 'description' => 'des écouteurs sans fil haut de gamme conçus pour offrir une expérience d écoute supérieure avec une qualité sonore exceptionnelle et une réduction active du bruit. Ils sont dotés de coussinets d oreille doux et confortables, et d un bandeau en maille respirant pour un port prolongé. Les AirPods Max offrent une autonomie de batterie allant jusqu à 20 heures, et sont disponibles en plusieurs couleurs élégantes.',
