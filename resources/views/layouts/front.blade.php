@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/evenstyle.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/footstyle.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.default.min.css')}}">
 
@@ -47,14 +48,16 @@
 
 @include('layouts.inc.frontendfooter')
 </div>--}}
+<div class="wrapper">
     @include('layouts.inc.frontnavbar')
 
     <div class="content">
         @yield('content')
     </div>
+
 {{--    @include('layouts.inc.frontendfooter')--}}
 </div>
-</div>
+
 <script src="{{asset('frontend/js/bootstrap.bundle.min.js')}}" ></script>
 <script src="{{asset('frontend/js/jquery-3.7.0.min.js')}}" ></script>
 <script src="{{asset('frontend/js/owl.carousel.js')}}" ></script>

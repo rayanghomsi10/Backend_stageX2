@@ -23,6 +23,7 @@
 
     <div class="container my-5">
         <div class="card shadow product_data">
+            @if($cartitems->count() > 0)
             <div class="card-body">
                 @php $total = 0; @endphp
                 @foreach($cartitems as $item)
@@ -38,7 +39,7 @@
                         </div>
                         <div class="col-md-3 my-auto">
                             <input type="hidden" class="prod_id" value="{{ $item->prod_id }}">
-                            @if($item->products->qty > $item->prod_qty)
+                            @if($item->products->qty >= $item->prod_qty)
                                 <label for="Quantity">Quantite</label>
                                 <div class="input-group text-center mb-3" style="width: 130px">
                                     <button class="input-group-text changeQty decrement-btn">-</button>
@@ -57,11 +58,19 @@
                     @php $total += $item->products->selling_price * $item->prod_qty; @endphp
                 @endforeach
             </div>
+
             <div class="card-footer">
                 <h6>Prix Total: {{ $total }}</h6>
                 <a href="{{ url('checkout') }}" class="btn btn-outline-success float-end">Proceder au paiement</a>
             </div>
+            @else
+                <div class="card-body text-center">
+                    <h2><ion-icon name="cart"></ion-icon>Votre panier est vide</h2>
+                    <a href="{{ url('category') }}" class="btn btn-outline-primary float-end"><ion-icon name="cart"></ion-icon>Continuer vos achats</a>
+                </div>
+            @endif
         </div>
+
     </div>
 
 

@@ -73,7 +73,7 @@ class productsTableSeeder extends Seeder
             'description' => 'Le MSI Alpha 15 est un ordinateur portable de jeu puissant équipé d un processeur AMD Ryzen et d une carte graphique AMD Radeon RX 5500M. Il dispose également d un écran de 15,6 pouces avec une fréquence de rafraîchissement de 144 Hz, offrant une expérience de jeu fluide et immersive. Le MSI Alpha 15 est un choix idéal pour les joueurs qui cherchent un ordinateur portable de jeu performant à un prix abordable.',
             'original_price' => '1390000',
             'selling_price' => '1350000',
-            'image' => 'MSI_Alpha15.jpg',
+            'image' => 'MSI_Alpha15-transformed.png',
             'qty' => '11',
             'tax' => '0',
             'status' => '0',

@@ -45,7 +45,7 @@
                         <br>
                         <hr>
                         <br>
-                        @if($products->qty > 0)
+                        @if($products->qty >= 1)
                             <label class="badge bg-success">En stock</label>
                         @else
                             <label class="badge bg-danger">Fini</label>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="col-md-10">
                                 <br/>
-                                @if($products->qty > 0)
+                                @if($products->qty >= 1)
                                     <label class="badge bg-success">En stock</label>
                                     <button type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></button>
                                 @else

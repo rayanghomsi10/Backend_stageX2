@@ -33,6 +33,7 @@ class CheckoutController extends Controller
     public function placeorder(Request $request)
     {
         $order = new Order();
+        $order->user_id = Auth::id();
         $order->fname = $request->input('fname');
         $order->lname = $request->input('lname');
         $order->email = $request->input('email');
@@ -43,6 +44,16 @@ class CheckoutController extends Controller
         $order->state = $request->input('state');
         $order->country = $request->input('country');
         $order->pincode = $request->input('pincode');
+
+        //prix total
+        $total = 0;
+        $cartitems_total = Cart::where('user_id', Auth::id())->get();
+        foreach ($cartitems_total as $prod)
+        {
+            $total += $prod->products->selling_price;
+        }
+        $order->total_price = $total;
+
         $order->tracking_no = 'lab2view'.rand(1111,9999);
         $order->save();
 
@@ -55,9 +66,13 @@ class CheckoutController extends Controller
             OrderItem::create([
                 'order_id' =>$order->id,
                 'prod_id' =>$item->prod_id,
-                'qty' => $item->prod_id,
+                'qty' => $item->prod_qty,
                 'price' => $item->products->selling_price,
             ]);
+
+            $prod = Product::where('id', $item->prod_id)->first();
+            $prod->qty = $prod->qty - $item->prod_qty;
+            $prod->update();
         }
 
         if (Auth::user()->address1 == NULL)
@@ -74,6 +89,9 @@ class CheckoutController extends Controller
             $user->pincode = $request->input('pincode');
             $user->update();
         }
+        $cartitems= Cart::where('user_id', Auth::id())->get();
+
+        Cart::destroy($cartitems);
 
         return redirect('/')->with('status', 'commande effectuer');
 
