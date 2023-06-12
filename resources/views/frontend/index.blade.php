@@ -71,6 +71,7 @@
             </div>
         </div>
     </div>
+    <br>
     @include('layouts.inc.frontendfooter')
 @endsection
 

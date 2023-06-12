@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div class="py-3 mb-4 shadow-sm bg-warning border-top">
+    <div class="py-3 mb-4 shadow-sm  border-top" style="background: #3586ff;">
         <div class="container">
             <h6 class="mb-0">
                 <a href="{{ url('category') }}">
@@ -23,7 +23,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" style="background-color: #6486ff">
         <div class="card shadow product_data">
             <div class="card-body">
                 <div class="row">
@@ -64,11 +64,11 @@
                                 <br/>
                                 @if($products->qty >= 1)
                                     <label class="badge bg-success">En stock</label>
-                                    <button type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></button>
+                                    <a href="{{ url('cart') }}" type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></a>
                                 @else
 
                                 @endif
-                                <button type="button" class="btn btn-success  me-3 float-start">Wishlist <ion-icon name="heart-outline"></ion-icon></button>
+                                <button type="button" class="btn btn-success addTowishlist me-3 float-start">Wishlist <ion-icon name="heart-outline"></ion-icon></button>
                             </div>
                         </div>
                     </div>
@@ -128,6 +128,100 @@
 
                 });
             });
+
+            $('.addTowishlist').click(function (e){
+                e.preventDefault();
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+
+                var product_id = $(this).closest('.product_data').find('.prod_id').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "/add-to-wishlist",
+                    data: {
+                        '_token': '{{ csrf_token() }}',
+                        'product_id': product_id,
+                    },
+                    success: function (response){
+                        swal("",response.status, "success");
+
+                    },
+                    error: function (response) {
+                        // Affiche un message d'erreur
+                        swal("",response.status, "error");
+                    }
+
+
+                });
+            });
+
+            $('.increment-btn').click(function (e) {
+                e.preventDefault();
+
+                // var inc_value = $('.qty-input').val();
+                var inc_value = $(this).closest('.product_data').find('.qty-input').val();
+                var value = parseInt(inc_value, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value < 10)
+                {
+                    value++;
+                    $(this).closest('.product_data').find('.qty-input').val(value);
+
+                }
+            });
+
+            $('.decrement-btn').click(function (e) {
+                e.preventDefault();
+
+                // var dec_value = $('.qty-input').val();
+                var dec_value =$(this).closest('.product_data').find('.qty-input').val();
+                var value = parseInt(dec_value, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value > 1)
+                {
+                    value--;
+                    // $('.qty-input').val(value);
+                    $(this).closest('.product_data').find('.qty-input').val(value);
+
+                }
+            });
+
+            $('.changeQty').click(function (e){
+                e.preventDefault();
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                var prod_id = $(this).closest('.product_data').find('.prod_id').val();
+                var qty = $(this).closest('.product_data').find('.qty-input').val();
+
+                data = {
+                    '_token': '{{ csrf_token() }}',
+                    'prod_id' : prod_id,
+                    'prod_qty' : qty,
+                }
+
+                $.ajax({
+                    method: "POST",
+                    url: "/update-cart" ,
+                    data: data,
+
+                    success: function (response){
+                        window.location.reload();
+                    }
+                });
+
+            });
+
 
         });
     </script>

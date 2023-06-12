@@ -7,7 +7,7 @@
 
 @section('content')
 
-    <div class="py-3 mb-4 shadow-sm bg-warning border-top">
+    <div class="py-3 mb-4 shadow-sm border-top" style="background: #3586ff;">
         <div class="container">
             <h6 class="mb-0">
                 <a href="{{ url('/') }}">
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5" style="background-color: #6486ff">
         <div class="card shadow product_data">
             @if($cartitems->count() > 0)
             <div class="card-body">
@@ -55,7 +55,6 @@
                             <button class="btn btn-danger delete-cart-item"><ion-icon name="trash-outline"></ion-icon>Delete</button>
                         </div>
                     </div>
-                    @php $total += $item->products->selling_price * $item->prod_qty; @endphp
                 @endforeach
             </div>
 
@@ -76,9 +75,10 @@
 
 @endsection
 
-{{--@section('scripts')
+@section('scripts')
 
     <script>
+        $(document).ready(function () {
         $('.delete-cart-item').click(function (e) {
             e.preventDefault();
             $.ajaxSetup({
@@ -90,18 +90,81 @@
             var prod_id = $(this).closest('.product_data').find('.prod_id').val();
             $.ajax({
                 method: "POST",
-                url: "delete-cart-item" ,
+                url: "delete-cart-item",
                 data: {
-                    'prod_id':prod_id,
+                    '_token': '{{ csrf_token() }}',
+                    'prod_id': prod_id,
                 },
-                success: function (response){
-                    swal("",response.status, "Succes");
+                success: function (response) {
+                    swal("", response.status, "Succes");
                 }
+            });
+        });
+
+            $('.increment-btn').click(function (e) {
+                e.preventDefault();
+
+                // var inc_value = $('.qty-input').val();
+                var inc_value = $(this).closest('.product_data').find('.qty-input').val();
+                var value = parseInt(inc_value, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value < 10)
+                {
+                    value++;
+                    $(this).closest('.product_data').find('.qty-input').val(value);
+
+                }
+            });
+
+            $('.decrement-btn').click(function (e) {
+                e.preventDefault();
+
+                // var dec_value = $('.qty-input').val();
+                var dec_value =$(this).closest('.product_data').find('.qty-input').val();
+                var value = parseInt(dec_value, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value > 1)
+                {
+                    value--;
+                    // $('.qty-input').val(value);
+                    $(this).closest('.product_data').find('.qty-input').val(value);
+
+                }
+            });
+
+            $('.changeQty').click(function (e){
+                e.preventDefault();
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                var prod_id = $(this).closest('.product_data').find('.prod_id').val();
+                var qty = $(this).closest('.product_data').find('.qty-input').val();
+
+                data = {
+                    '_token': '{{ csrf_token() }}',
+                    'prod_id' : prod_id,
+                    'prod_qty' : qty,
+                }
+
+                $.ajax({
+                    method: "POST",
+                    url: "/update-cart" ,
+                    data: data,
+
+                    success: function (response){
+                        window.location.reload();
+                    }
+                });
+
             });
 
         });
 
     </script>
 
-@endsection--}}
+@endsection
 

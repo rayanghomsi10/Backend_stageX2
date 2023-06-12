@@ -39,6 +39,18 @@
                     <p>add-Products</p>
                 </a>
             </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('add-products') ? 'active':'' }} ">
+                <a class="nav-link" href="{{url('orders')}}">
+                    <i class="material-icons"><ion-icon name="person-outline"></ion-icon></i>
+                    <p>Commandes</p>
+                </a>
+            </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('add-products') ? 'active':'' }} ">
+                <a class="nav-link" href="{{url('users')}}">
+                    <i class="material-icons"><ion-icon name="person-outline"></ion-icon></i>
+                    <p>Users</p>
+                </a>
+            </li>
 
         </ul>
     </div>

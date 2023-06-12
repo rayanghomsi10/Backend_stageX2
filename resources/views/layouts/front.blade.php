@@ -27,7 +27,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans antialiased">
+<body class="font-sans antialiased" style="background-color: #6486ff; height: 100%;">
 {{--<div class="min-h-screen bg-gray-100 dark:bg-gray-900">
     @include('layouts.navigation')
 
@@ -48,15 +48,19 @@
 
 @include('layouts.inc.frontendfooter')
 </div>--}}
-<div class="wrapper">
+<div >
     @include('layouts.inc.frontnavbar')
 
-    <div class="content">
+    <div class="content" >
         @yield('content')
     </div>
+<div>
 
-{{--    @include('layouts.inc.frontendfooter')--}}
-</div>
+{{--    <div style="margin-bottom: 500px">--}}
+{{--        @include('layouts.inc.frontendfooter')--}}
+{{--    </div>--}}
+
+
 
 <script src="{{asset('frontend/js/bootstrap.bundle.min.js')}}" ></script>
 <script src="{{asset('frontend/js/jquery-3.7.0.min.js')}}" ></script>

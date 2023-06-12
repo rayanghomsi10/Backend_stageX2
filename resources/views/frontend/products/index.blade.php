@@ -6,13 +6,13 @@
 
 @section('content')
 
-    <div class="py-3 mb-4 shadow-sm bg-warning border-top">
+    <div class="py-3 mb-4 shadow-sm border-top" style="background: #3586ff;">
         <div class="container">
             <a href="{{ url('category/') }}"> <h6 class="mb-0"> {{$category->name}}</h6></a>
         </div>
     </div>
 
-    <div class="py-5" >
+    <div class="py-5" style="background-color: #6486ff;">
         <div class="container" >
             <div class="row">
                 <h2>{{$category->name}} </h2>

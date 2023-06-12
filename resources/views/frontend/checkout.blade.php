@@ -64,7 +64,7 @@
                         <div class="card-body">
                             <h6>Detail de la commande</h6>
                             <hr>
-                            <table class="table table-striped">
+                            <table class="table table-striped table-bordered">
                                 <thead>
                                 <th>Produit</th>
                                 <th>quantite</th>

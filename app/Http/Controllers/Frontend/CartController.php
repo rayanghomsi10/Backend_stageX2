@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
-    public function addproduct(Request $request)
+    public function add_product(Request $request)
     {
         $product_id = $request->input('product_id');
         $product_qty = $request->input('product_qty');
@@ -73,16 +73,16 @@ class CartController extends Controller
     public function updatecart(Request $request)
     {
         $prod_id = $request->input('prod_id');
-        $prod_qty = $request->input('prod_qty');
+        $product_qty = $request->input('prod_qty');
 
         if (Auth::check())
         {
             if (Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->exists())
             {
                 $cart = Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->first();
-                $cart->prod_qty = $prod_qty;
+                $cart->prod_qty = $product_qty;
                 $cart->update();
-                return response()->json(['starus' => "Quantite changer"]);
+                return response()->json(['status' => "Quantite changer"]);
             }
 
         }

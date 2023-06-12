@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #6486ff">
     <div class="container">
         <a class="navbar-brand" href="{{url('/')}}">E-shop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,16 +6,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
-                <a class="nav-link" href="{{url('category')}}">Categories</a>
-                <a class="nav-link" middleware="role" href="{{url('cart')}}">Panier</a>
-               {{-- @auth
-                    @if (Route::hasRole('admin'))
-                        <li><a href="/dashboard">Dashboard</a></li>
-                    @endif
-                @endauth--}}
+                <a class="nav-link active" aria-current="page" href="{{url('/')}}"><ion-icon name="home-outline"></ion-icon> Home</a>
+                <a class="nav-link" href="{{url('category')}}"><ion-icon name="bag-outline"></ion-icon> Categories</a>
+                <a class="nav-link"  href="{{url('cart')}}"><ion-icon name="cart-outline"></ion-icon> Panier</a>
+                <a class="nav-link"  href="{{url('wishlist')}}"><ion-icon name="cart-outline"></ion-icon> Wishlist</a>
 
-
+                {{-- @auth
+                     @if (Route::hasRole('admin'))
+                         <li><a href="/dashboard">Dashboard</a></li>
+                     @endif
+                 @endauth--}}
 
             @guest
                     @if (Route::has('login'))
@@ -49,6 +49,9 @@
                             <x-slot name="content">
                                 <x-dropdown-link :href="route('profile.edit')">
                                     {{ __('Profile') }}
+                                </x-dropdown-link>
+                                <x-dropdown-link href="{{ url('my-orders') }}" >
+                                    mes commandes
                                 </x-dropdown-link>
 
 

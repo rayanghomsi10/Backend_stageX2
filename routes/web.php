@@ -27,15 +27,23 @@ Route::get('/', [\App\Http\Controllers\Frontend\FrontendController::class, 'inde
 Route::get('category', [\App\Http\Controllers\Frontend\FrontendController::class, 'category']);
 Route::get('viewcategory/{id}', [\App\Http\Controllers\Frontend\FrontendController::class, 'viewcategory']);
 Route::get('category/{cate_slug}/{prod_slug}', [\App\Http\Controllers\Frontend\FrontendController::class, 'productview']);
-Route::post('add-to-cart', [\App\Http\Controllers\Frontend\CartController::class, 'addproduct']);
+Route::post('add-to-cart', [\App\Http\Controllers\Frontend\CartController::class, 'add_product']);
 Route::post('delete-cart-item', [\App\Http\Controllers\Frontend\CartController::class, 'delete_prod']);
 Route::post('update-cart', [\App\Http\Controllers\Frontend\CartController::class, 'updatecart']);
+Route::post('add-to-wishlist', [\App\Http\Controllers\Frontend\WishlistController::class, 'add']);
+Route::post('delete-wishlist-item', [\App\Http\Controllers\Frontend\WishlistController::class, 'deleteitem']);
 
 
 Route::middleware(['auth'])->group(function (){
     Route::get('cart', [\App\Http\Controllers\Frontend\CartController::class, 'viewcart']);
     Route::get('checkout', [\App\Http\Controllers\Frontend\CheckoutController::class, 'index']);
     Route::post('place-order', [\App\Http\Controllers\Frontend\CheckoutController::class, 'placeorder']);
+
+    Route::get('my-orders', [\App\Http\Controllers\Frontend\UserController::class, 'index']);
+
+    Route::get('view-order/{id}', [\App\Http\Controllers\Frontend\UserController::class, 'view']);
+    Route::get('wishlist', [\App\Http\Controllers\Frontend\WishlistController::class, 'index']);
+
 });
 
 
@@ -73,5 +81,14 @@ Route::middleware(['auth', 'role:admin'])->group(function (){
     Route::get('edit-product/{id}', [\App\Http\Controllers\Admin\ProductController::class, 'edit'])->name('admin.products.edit');
     Route::put('update-product/{id}', [\App\Http\Controllers\Admin\ProductController::class, 'update']);
     Route::get('delete-product/{id}', [\App\Http\Controllers\Admin\ProductController::class, 'destroy']);
+
+
+    Route::get('users', [\App\Http\Controllers\Admin\FrontendController::class, 'users']);
+    Route::get('orders', [\App\Http\Controllers\Admin\OrderController::class, 'index']);
+    Route::get('admin/view-order/{id}', [\App\Http\Controllers\Admin\OrderController::class, 'view']);
+    Route::put('update-order/{id}', [\App\Http\Controllers\Admin\OrderController::class, 'updateorder']);
+    Route::get('order-history', [\App\Http\Controllers\Admin\OrderController::class, 'orderhistory']);
+    Route::get('view-users/{id}', [\App\Http\Controllers\Admin\FrontendController::class, 'viewusers']);
+
 
 });
