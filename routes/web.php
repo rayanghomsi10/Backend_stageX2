@@ -66,7 +66,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function (){
 });
 
 Route::middleware(['auth', 'role:admin'])->group(function (){
-    Route::get('/private', [App\Http\Controllers\Admin\FrontendController::class, 'index'])->name('admin.index');
+    Route::get('/private', [\App\Http\Controllers\admin\FrontendController::class, 'count'])->name('admin.index');
     Route::get('categories', [App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin.category.index');
     Route::get('add-category', [App\Http\Controllers\Admin\CategoryController::class, 'add'])->name('admin.category.add');
     Route::post('insert-category', [App\Http\Controllers\Admin\CategoryController::class, 'insert']);

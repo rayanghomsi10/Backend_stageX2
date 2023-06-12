@@ -11,12 +11,6 @@
                 <a class="nav-link"  href="{{url('cart')}}"><ion-icon name="cart-outline"></ion-icon> Panier</a>
                 <a class="nav-link"  href="{{url('wishlist')}}"><ion-icon name="cart-outline"></ion-icon> Wishlist</a>
 
-                {{-- @auth
-                     @if (Route::hasRole('admin'))
-                         <li><a href="/dashboard">Dashboard</a></li>
-                     @endif
-                 @endauth--}}
-
             @guest
                     @if (Route::has('login'))
                             @auth
@@ -32,6 +26,11 @@
                             @endauth
                     @endif
                 @else
+                    @auth
+                        @if ( Auth::user()->role === 'admin')
+                            <li><a class="nav-link" href="/private"><ion-icon name="person"></ion-icon> Admin</a></li>
+                        @endif
+                    @endauth
                     <div class="hidden sm:flex sm:items-center sm:ml-6">
                         <x-dropdown align="right" >
                             <x-slot name="trigger">
