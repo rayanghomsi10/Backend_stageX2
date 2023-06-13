@@ -93,7 +93,7 @@ class CheckoutController extends Controller
 
         Cart::destroy($cartitems);
 
-        return redirect('/')->with('status', 'commande effectuer');
+        return redirect('/')->with('status', 'commande effectuée');
 
     }
 }

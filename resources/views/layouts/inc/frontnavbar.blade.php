@@ -1,15 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #6486ff">
     <div class="container">
         <a class="navbar-brand" href="{{url('/')}}">E-shop</a>
+        <div class="search-bar">
+            <form action="{{ url('searchproduct') }}" method="POST">
+                @csrf
+                <div class="input-group">
+                    <input type="search" id="search_product" name="product_name" class="form-control" placeholder="Recherche" aria-label="Username" aria-describedby="basic-addon1">
+                    <button class="input-group-text" type="submit"><ion-icon name="search"></ion-icon></button>
+                </div>
+            </form>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="{{url('/')}}"><ion-icon name="home-outline"></ion-icon> Home</a>
+                <a class="nav-link active" aria-current="page" href="{{url('/')}}"><ion-icon name="home-outline"></ion-icon> Accueil</a>
                 <a class="nav-link" href="{{url('category')}}"><ion-icon name="bag-outline"></ion-icon> Categories</a>
-                <a class="nav-link"  href="{{url('cart')}}"><ion-icon name="cart-outline"></ion-icon> Panier</a>
-                <a class="nav-link"  href="{{url('wishlist')}}"><ion-icon name="cart-outline"></ion-icon> Wishlist</a>
+                <a class="nav-link"  href="{{url('cart')}}"><ion-icon name="cart-outline"></ion-icon> Panier<span class="badge badge-pill bg-primary cart-count">0</span></a>
+                <a class="nav-link"  href="{{url('wishlist')}}"><ion-icon name="star"></ion-icon> Favoris<span class="badge badge-pill bg-primary wishlist-count">0</span></a>
 
             @guest
                     @if (Route::has('login'))

@@ -11,10 +11,10 @@
         <div class="container">
             <h6 class="mb-0">
                 <a href="{{ url('/') }}">
-                    Home
+                    Accueil
                 </a> /
                 <a href="{{ url('cart') }}">
-                    cart
+                    Panier
                 </a> /
 
             </h6>

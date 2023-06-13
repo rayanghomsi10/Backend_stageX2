@@ -5,6 +5,20 @@
 @endsection
 
 @section('content')
+
+    <div class="py-3 mb-4 shadow-sm  border-top" style="background: #3586ff;">
+        <div class="container">
+            <h6 class="mb-0">
+                <a href="{{ url('/') }}">
+                    Accueil
+                </a> /
+                <a href="{{ url('category') }}">
+                    Validation de la commande
+                </a> /
+            </h6>
+        </div>
+    </div>
+
     <div class="container mt-5">
         <form action="{{ url('place-order') }} " method="POST">
             @csrf
@@ -81,7 +95,7 @@
                                 @endforeach
                             </table>
                             <hr>
-                            <button type="submit" class="btn btn-primary float-end">Pace Order</button>
+                            <button type="submit" class="btn btn-primary mt-4 form-control">Passer la commande</button>
                         </div>
                     </div>
                 </div>

@@ -50,7 +50,7 @@ class CategoryController extends Controller
         $category->meta_keyword = $request->input('meta_keyword');
         $category->meta_descrip = $request->input('meta_descrip');
         $category->save();
-        return redirect('/categories')->with('status', "Categorie bien ajouter");
+        return redirect('/categories')->with('status', "Categorie bien ajoutée");
     }
 
     public function edit($id){
@@ -82,7 +82,7 @@ class CategoryController extends Controller
         $category->meta_keyword = $request->input('meta_keyword');
         $category->meta_descrip = $request->input('meta_descrip');
         $category->update();
-        return redirect('/private')->with('status', "Categorie bien modifier");
+        return redirect('/private')->with('status', "Categorie bien modifiée");
     }
 
 
@@ -98,7 +98,7 @@ class CategoryController extends Controller
             }
         }
         $category->delete();
-        return redirect('categories')->with('status', "bien supprimer");
+        return redirect('categories')->with('status', "Categorie supprimée");
 
     }
 }

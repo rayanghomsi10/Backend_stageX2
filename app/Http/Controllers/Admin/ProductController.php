@@ -118,7 +118,7 @@ class ProductController extends Controller
             }
         }
         $products->delete();
-        return redirect('products')->with('status', "Produit supprimer");
+        return redirect('products')->with('status', "Produit supprimé");
 
 
     }

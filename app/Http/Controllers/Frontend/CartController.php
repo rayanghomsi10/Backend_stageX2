@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Cart;
 use App\Models\Product;
 
+use App\Models\Wishlist;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -61,7 +62,7 @@ class CartController extends Controller
             {
                 $cartitems = Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->first();
                 $cartitems->delete();
-                return response()->json(['status' => "Produit supprimer"]);
+                return response()->json(['status' => "Produit supprimé"]);
             }
 
         }
@@ -82,9 +83,20 @@ class CartController extends Controller
                 $cart = Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->first();
                 $cart->prod_qty = $product_qty;
                 $cart->update();
-                return response()->json(['status' => "Quantite changer"]);
+                return response()->json(['status' => "Quantité changée"]);
             }
 
         }
+    }
+
+    public function cartcount()
+    {
+        $cartcount = Cart::where('user_id', Auth::id())->count();
+        return response()->json(['count' => $cartcount]);
+    }
+    public function wishlistcount()
+    {
+        $cartcount = Wishlist::where('user_id', Auth::id())->count();
+        return response()->json(['count' => $cartcount]);
     }
 }

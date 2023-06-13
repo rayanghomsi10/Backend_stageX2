@@ -9,6 +9,9 @@
     <div class="py-3 mb-4 shadow-sm  border-top" style="background: #3586ff;">
         <div class="container">
             <h6 class="mb-0">
+                <a href="{{ url('/') }}">
+                    Accueil
+                </a> /
                 <a href="{{ url('category') }}">
                     Categories
                 </a> /

@@ -6,9 +6,17 @@
 
 @section('content')
 
-    <div class="py-3 mb-4 shadow-sm border-top" style="background: #3586ff;">
+    <div class="py-3 mb-4 shadow-sm  border-top" style="background: #3586ff;">
         <div class="container">
-            <a href="{{ url('category/') }}"> <h6 class="mb-0"> {{$category->name}}</h6></a>
+            <h6 class="mb-0">
+                <a href="{{ url('/') }}">
+                    Accueil
+                </a> /
+                <a href="{{ url('category') }}">
+                    Categories
+                </a> /
+                <a href="#">{{$category->name}} /</a>
+            </h6>
         </div>
     </div>
 

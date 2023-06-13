@@ -24,7 +24,7 @@ class OrderController extends Controller
         $orders = Order::find($id);
         $orders->status = $request->input('order_status');
         $orders->update();
-        return redirect('orders')->with('status', "Commande mise a jour");
+        return redirect('orders')->with('status', "Commande mise à jour");
     }
 
     public function orderhistory()

@@ -31,7 +31,7 @@ class categoriesTableSeeder extends Seeder
                 'description' => 'Ordinateur de marque',
                 'status' => '0',
                 'popular' => '1',
-                'image' => 'MSI_Alpha15-transformed.png',
+                'image' => 'MSI_Alpha15.png',
                 'meta_title' => 'Ordinateur',
                 'meta_keyword' => 'Ordinateur',
                 'meta_descrip' => 'Ordinateur de marque',

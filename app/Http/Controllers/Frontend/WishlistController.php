@@ -27,7 +27,7 @@ class WishlistController extends Controller
                 $wish->prod_id = $prod_id;
                 $wish->user_id = Auth::id();
                 $wish->save();
-                return response()->json(['status' => "Produit ajouter"]);
+                return response()->json(['status' => "Produit ajouté"]);
 
             }
             else{
@@ -48,7 +48,7 @@ class WishlistController extends Controller
             {
                 $wish = Wishlist::where('prod_id', $prod_id)->where('user_id', Auth::id())->first();
                 $wish->delete();
-                return response()->json(['status' => "Produit supprimer"]);
+                return response()->json(['status' => "Produit supprimé"]);
             }
 
         }

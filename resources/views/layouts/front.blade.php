@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
 
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/custom.css')}}">
@@ -70,6 +73,28 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+            var availableTags = [];
+
+            $.ajax({
+                method: "GET",
+                url: "/product-list",
+                success: function (response){
+                    // console.log(response)
+                    startautocomplete(response);
+
+                }
+            });
+
+            function startautocomplete(availableTags)
+            {
+                $( "#search_product" ).autocomplete({
+                    source: availableTags
+                });
+            }
+    </script>
+
 
 @if(session('status'))
     <script>

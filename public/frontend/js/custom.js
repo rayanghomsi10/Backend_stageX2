@@ -1,6 +1,43 @@
 
 $(document).ready(function () {
 
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    loadcart();
+    function loadcart()
+    {
+
+
+        $.ajax({
+            method: "GET",
+            url: "/load-cart-data" ,
+            success: function (response){
+                $('.cart-count').html('');
+                $('.cart-count').html(response.count);
+
+            }
+        });
+    }
+    loadwishlist();
+    function loadwishlist()
+    {
+
+
+        $.ajax({
+            method: "GET",
+            url: "/load-wishlist-data" ,
+            success: function (response){
+                $('.wishlist-count').html('');
+                $('.wishlist-count').html(response.count);
+
+            }
+        });
+    }
+
 
 /*    $('.increment-btn').click(function (e) {
         e.preventDefault();
@@ -145,6 +182,18 @@ $(document).ready(function () {
             }
         })
     });
+
+    $('.cart-count').click(function (e){
+        e.preventDefault();
+
+    });
+
+    $('.wishlist-count').click(function (e){
+        e.preventDefault();
+
+    });
+
+
 
 });
 

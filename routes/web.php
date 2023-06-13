@@ -32,6 +32,11 @@ Route::post('delete-cart-item', [\App\Http\Controllers\Frontend\CartController::
 Route::post('update-cart', [\App\Http\Controllers\Frontend\CartController::class, 'updatecart']);
 Route::post('add-to-wishlist', [\App\Http\Controllers\Frontend\WishlistController::class, 'add']);
 Route::post('delete-wishlist-item', [\App\Http\Controllers\Frontend\WishlistController::class, 'deleteitem']);
+Route::get('load-cart-data', [\App\Http\Controllers\Frontend\CartController::class, 'cartcount']);
+Route::get('load-wishlist-data', [\App\Http\Controllers\Frontend\CartController::class, 'wishlistcount']);
+Route::get('product-list', [\App\Http\Controllers\Frontend\FrontendController::class, 'productlist']);
+Route::post('searchproduct', [\App\Http\Controllers\Frontend\FrontendController::class, 'searchproduct']);
+
 
 
 Route::middleware(['auth'])->group(function (){
