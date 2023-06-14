@@ -15,9 +15,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="{{url('/')}}"><ion-icon name="home-outline"></ion-icon> Accueil</a>
-                <a class="nav-link" href="{{url('category')}}"><ion-icon name="bag-outline"></ion-icon> Categories</a>
-                <a class="nav-link"  href="{{url('cart')}}"><ion-icon name="cart-outline"></ion-icon> Panier<span class="badge badge-pill bg-primary cart-count">0</span></a>
+                <a class="nav-link active" aria-current="page" href="{{url('/')}}"><ion-icon name="home"></ion-icon> Accueil</a>
+                <a class="nav-link" href="{{url('category')}}"><ion-icon name="bag"></ion-icon> Categories</a>
+                <a class="nav-link"  href="{{url('cart')}}"><ion-icon name="cart"></ion-icon> Panier<span class="badge badge-pill bg-primary cart-count">0</span></a>
                 <a class="nav-link"  href="{{url('wishlist')}}"><ion-icon name="star"></ion-icon> Favoris<span class="badge badge-pill bg-primary wishlist-count">0</span></a>
 
             @guest

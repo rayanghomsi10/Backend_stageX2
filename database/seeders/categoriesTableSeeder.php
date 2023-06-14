@@ -17,7 +17,7 @@ class categoriesTableSeeder extends Seeder
             [
                 'name' => 'Telephone',
                 'slug' => 'Telephone',
-                'description' => 'Telephone de marque',
+                'description' => 'Nous proposons une sélection de téléphones de qualité supérieure, rigoureusement testés et soumis à des contrôles de qualité stricts. Nous travaillons avec les meilleurs fabricants pour vous offrir des téléphones fiables, performants et durables, dotés des dernières technologies et des fonctionnalités les plus avancées.',
                 'status' => '0',
                 'popular' => '1',
                 'image' => 'tel.jpg',
@@ -28,10 +28,10 @@ class categoriesTableSeeder extends Seeder
             [
                 'name' => 'Ordinateur',
                 'slug' => 'Ordinateur',
-                'description' => 'Ordinateur de marque',
+                'description' => 'Nos ordinateurs sont soigneusement sélectionnés pour offrir une expérience informatique exceptionnelle. Nous avons des ordinateurs pour tous les besoins, des modèles portables pour une utilisation en déplacement aux ordinateurs de bureau performants pour une utilisation professionnelle ou de jeux.',
                 'status' => '0',
                 'popular' => '1',
-                'image' => 'MSI_Alpha15.png',
+                'image' => 'MSI_Alpha15.jpg',
                 'meta_title' => 'Ordinateur',
                 'meta_keyword' => 'Ordinateur',
                 'meta_descrip' => 'Ordinateur de marque',
@@ -81,8 +81,8 @@ class categoriesTableSeeder extends Seeder
                 'meta_descrip' => 'ecouteur',
             ],
             [
-                'name' => 'Coque de telephone',
-                'slug' => 'Coque_de_telephone',
+                'name' => 'Pochette de telephone',
+                'slug' => 'Pochette_de_telephone',
                 'description' => 'Protégez votre téléphone tout en le personnalisant avec une coque de téléphone élégante et fonctionnelle.',
                 'status' => '0',
                 'popular' => '0',

@@ -41,7 +41,8 @@
                         <br>
                         <hr>
                         <label class="me-3" style="text-decoration: line-through ">Prix d'origine : {{ $products->original_price }} XAF</label>
-                        <label class="fw-bold">Prix de vente : {{ $products->selling_price }} XAF</label>
+                        <label class="fw-bold">Prix de vente : {{ $products->selling_price }} XAF</label><br>
+                        <label class="fw-bold text-center mt-3">PRESENTATION</label>
                         <p class="mt-3">
                             {!! $products->small_description !!}
                         </p>
@@ -66,7 +67,6 @@
                             <div class="col-md-10">
                                 <br/>
                                 @if($products->qty >= 1)
-                                    <label class="badge bg-success">En stock</label>
                                     <a href="{{ url('cart') }}" type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></a>
                                 @else
 
@@ -81,7 +81,7 @@
                     <hr>
                     <br>
                     <h3 class="mb-0">
-                        Description
+                        Caracteristiques
                     </h3>
                     <br>
                     <p>

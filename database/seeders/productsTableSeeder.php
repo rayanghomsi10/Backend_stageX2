@@ -33,6 +33,79 @@ class productsTableSeeder extends Seeder
            ],
             [
                 'cate_id' => '1',
+                'name' => 'Galaxy S21 FE - 5G - 8/256 Go - Graphite',
+                'slug' => 'Galaxy_S21',
+                'small_description' => 'Smartphone 6,4" Super AMOLED FHD+ 120Hz - Snapdragon 888 - 5G - RAM 8 Go - 4500 mAh - Charge rapide 25W - 32MP - Android 12
+Une expérience épique pour tous les fans : Grand écran fluide 6,4” -120Hz / Des photos lumineuses de jour comme de nuit / Space Zoom x30 Zoom Optique Hybride x3 / Processeur Puissant pour des performances épiques / Batterie 4500 mAh et charge sans fil.
+',
+                'description' => '
+Plus de fluidité et de confort
+Ecran 120 Hz Super AMOLED
+Navigation toujours plus fluide.
+Expérience de jeu ultra-réactive avec un taux d échantillonnage tactile de 240 Hz (en mode jeu)
+Un maximum de contenu sur grand écran
+Une immersion totale
+Ratio d’écran de 19,5:9
+Bordures minimaliste
+
+Durabilité
+Le verre Gorilla Glass Victus protège l écran contre les chutes accidentelles
+Des capteurs photos exceptionnels
+Selfie 32MP - f/2,2, FOV 80˚
+Ultra Grand Angle 12MP - f/2,2, FOV 123˚
+Grand Angle 12MP OIS - Dual Pixel AF, OIS, f/1,8, FOV 79˚
+Zoom optique X3 8MP OIS - SpaceZoom 30x , OIS, f/2,4, FOV 32˚
+Vivez l’expérience GalaxyS
+Le Galaxy S21 FE vous offre la puissance et la vitesse nécessaire pour optimiser vos utilisations grâce au processeur Snapdragon 888.
+Batterie longue durée : 4 500 mAh pour vous suivre toute la journée…et toute la nuit.',
+                'original_price' => '375000',
+                'selling_price' => '357000',
+                'image' => 's21fe.jpg',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'samsung',
+                'meta_keyword' => 'Samsung',
+                'meta_description' => 'Smartphone 6,4" Super AMOLED FHD+ 120Hz - Snapdragon 888 - 5G - RAM 8 Go - 4500 mAh - Charge rapide 25W - 32MP - Android 12
+Une expérience épique pour tous les fans : Grand écran fluide 6,4” -120Hz / Des photos lumineuses de jour comme de nuit / Space Zoom x30 Zoom Optique Hybride x3 / Processeur Puissant pour des performances épiques / Batterie 4500 mAh et charge sans fil.
+',
+            ],
+            [
+                'cate_id' => '1',
+                'name' => 'Galaxy S23 - 5G - 8/256 Go - Graphite',
+                'slug' => 'Galaxy_S23',
+                'small_description' => 'Smartphone 6,4" Super AMOLED FHD+ 120Hz - Snapdragon 888 - 5G - RAM 8 Go - 4500 mAh - Charge rapide 25W - 32MP - Android 12
+Une expérience épique pour tous les fans : Grand écran fluide 6,4” -120Hz / Des photos lumineuses de jour comme de nuit / Space Zoom x30 Zoom Optique Hybride x3 / Processeur Puissant pour des performances épiques / Batterie 4500 mAh et charge sans fil.
+',
+                'description' => '
+Un écran Infinity-O de 6.1"
+Le Samsung Galaxy S23 est équipé d un écran Infinity-O Dynamic AMOLED 2X de 6.1" à résolution Full HD+ 1080 x 2340 pixels, qui sublime la richesse des images tout en vous offrant une immersion spectaculaire. Et avec un taux de rafraichissement adaptatif de 120 Hz, utiliser son smartphone n aura jamais été aussi agréable. Par ailleurs, le S23 intègre un processeur Snapdragon 8 de Gen 2 cadencé à 8 Go de RAM et 128 Go de capacité afin de vous offrir toute la puissance nécessaire pour profiter au mieux de votre smartphone, même les jeux les plus exigeants en ressources graphiques fonctionnent de manière ultra fluide.
+Dual SIM et compatible eSIM, le Samsung Galaxy S23 vous permet de gérer efficacement votre vie professionnelle et votre vie personnelle de la meilleure des façons.
+
+Un design novateur et avant-gardiste
+Prenez des photos très détaillées grâce au Samsung Galaxy S23 et à son triple capteur photo de 50+12+10 MP. Il intègre notamment un optimiseur de scènes, une reconnaissance automatique de l image et un cadrage professionnel intelligent pour vous proposer le meilleur paramétrage et cadrage pour mettre grandement en valeur vos photos. Quant au mode Nuit avancé, vous pouvez prendre encore plus de photos impressionnantes, même la nuit.
+',
+                'original_price' => '465000',
+                'selling_price' => '441000',
+                'image' => 's23.jpeg',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'samsung',
+                'meta_keyword' => 'Samsung',
+                'meta_description' => '
+Un écran Infinity-O de 6.1"
+Le Samsung Galaxy S23 est équipé d un écran Infinity-O Dynamic AMOLED 2X de 6.1" à résolution Full HD+ 1080 x 2340 pixels, qui sublime la richesse des images tout en vous offrant une immersion spectaculaire. Et avec un taux de rafraichissement adaptatif de 120 Hz, utiliser son smartphone n aura jamais été aussi agréable. Par ailleurs, le S23 intègre un processeur Snapdragon 8 de Gen 2 cadencé à 8 Go de RAM et 128 Go de capacité afin de vous offrir toute la puissance nécessaire pour profiter au mieux de votre smartphone, même les jeux les plus exigeants en ressources graphiques fonctionnent de manière ultra fluide.
+Dual SIM et compatible eSIM, le Samsung Galaxy S23 vous permet de gérer efficacement votre vie professionnelle et votre vie personnelle de la meilleure des façons.
+
+Un design novateur et avant-gardiste
+Prenez des photos très détaillées grâce au Samsung Galaxy S23 et à son triple capteur photo de 50+12+10 MP. Il intègre notamment un optimiseur de scènes, une reconnaissance automatique de l image et un cadrage professionnel intelligent pour vous proposer le meilleur paramétrage et cadrage pour mettre grandement en valeur vos photos. Quant au mode Nuit avancé, vous pouvez prendre encore plus de photos impressionnantes, même la nuit.
+',
+            ],
+            [
+                'cate_id' => '1',
                 'name' => 'Samsung Galaxy S20',
                 'slug' => 'Samsung_Galaxy_S20',
                 'small_description' => 'Le Samsung Galaxy S20 FE 5G est un smartphone annoncé le 23 septembre 2020, est un telephone qui s adaptera a tous vos problemes',
@@ -70,7 +143,14 @@ class productsTableSeeder extends Seeder
             'name' => 'MSI Alpha15',
             'slug' => 'MSI_Alpha15',
             'small_description' => 'Le MSI Alpha 15 est un ordinateur portable de jeu puissant équipé d un processeur AMD Ryzen et d une carte graphique AMD Radeon RX 5500M. Il dispose également d un écran de 15,6 pouces avec une fréquence de rafraîchissement de 144 Hz, offrant une expérience de jeu fluide et immersive.',
-            'description' => 'Le MSI Alpha 15 est un ordinateur portable de jeu puissant équipé d un processeur AMD Ryzen et d une carte graphique AMD Radeon RX 5500M. Il dispose également d un écran de 15,6 pouces avec une fréquence de rafraîchissement de 144 Hz, offrant une expérience de jeu fluide et immersive. Le MSI Alpha 15 est un choix idéal pour les joueurs qui cherchent un ordinateur portable de jeu performant à un prix abordable.',
+            'description' => 'Processeur : AMD Ryzen 7 3750H
+Carte graphique : AMD Radeon RX 5500M avec 4 Go de mémoire GDDR6
+Écran : 15,6 pouces Full HD (1920 x 1080) IPS avec un taux de rafraîchissement de 144 Hz
+Mémoire vive : 8 Go DDR4 (extensible jusqu à 64 Go)
+Stockage : SSD NVMe de 512 Go
+Clavier : Rétroéclairé RGB
+Connectivité : Wi-Fi 5, Bluetooth 5.0, Ethernet Gigabit, USB Type-C, HDMI, mini DisplayPort
+Système d exploitation : Windows 10 Home',
             'original_price' => '1390000',
             'selling_price' => '1350000',
             'image' => 'MSI_Alpha15-transformed.png',
@@ -87,7 +167,16 @@ class productsTableSeeder extends Seeder
                 'name' => 'MSI GP66 Leopard',
                 'slug' => 'MSI_GP66_Leopard',
                 'small_description' => 'Le MSI GP66 Vector est un ordinateur portable haut de gamme avec des performances de pointe, un écran Full HD de 15,6 pouces à taux de rafraîchissement élevé et un clavier rétroéclairé RGB. Il est conçu pour les joueurs et les professionnels de la création de contenu qui recherchent un appareil puissant et polyvalent.',
-                'description' => 'Le MSI GP66 Vector est un ordinateur portable gaming haut de gamme, offrant des performances exceptionnelles grâce à son processeur Intel Core i7 de 11ème génération et sa carte graphique NVIDIA GeForce RTX 3070. Avec son écran Full HD de 15,6 pouces à taux de rafraîchissement de 144 Hz et son clavier rétroéclairé RGB, il est idéal pour les joueurs exigeants qui cherchent une expérience de jeu immersive et fluide. Sa conception robuste et ses nombreuses fonctionnalités en font également un choix populaire parmi les professionnels de la création de contenu.',
+                'description' => '
+Processeur : Intel Core i7-11800H de 11ème génération
+Carte graphique : NVIDIA GeForce RTX 3070 avec 8 Go de mémoire GDDR6
+Écran : 15,6 pouces Full HD (1920 x 1080) IPS avec un taux de rafraîchissement de 144 Hz
+Mémoire vive : 16 Go DDR4 (extensible jusqu à 64 Go)
+Stockage : SSD NVMe de 512 Go
+Clavier : Rétroéclairé RGB
+Connectivité : Wi-Fi 6E, Bluetooth 5.2, Ethernet Gigabit, Thunderbolt 4, USB Type-C, HDMI, mini DisplayPort
+Système d
+exploitation : Windows 10 Home',
                 'original_price' => '1300000',
                 'selling_price' => '950000',
                 'image' => 'MSI GP66 Leopard.jpg',
@@ -104,7 +193,14 @@ class productsTableSeeder extends Seeder
                 'name' => 'Asus ROG Strix Scar II',
                 'slug' => 'Asus_ROG_Strix_Scar_II',
                 'small_description' => 'L Asus ROG Strix Scar II est un ordinateur portable gaming de haute performance, avec un écran Full HD de 15,6 pouces à taux de rafraîchissement élevé et un clavier rétroéclairé RGB. Il est conçu pour offrir une expérience de jeu immersive et fluide aux joueurs exigeants.',
-                'description' => 'L Asus ROG Strix Scar II est un ordinateur portable gaming de haute performance, avec un écran Full HD de 15,6 pouces à taux de rafraîchissement élevé et un clavier rétroéclairé RGB. Il offre une expérience de jeu immersive grâce à sa carte graphique NVIDIA GeForce GTX 10 Series et son processeur Intel Core i7 de 8ème génération. Sa conception élégante et son système de refroidissement avancé en font également un choix populaire parmi les joueurs exigeants.',
+                'description' => 'Processeur : Intel Core i7-8750H de 8ème génération
+Carte graphique : NVIDIA GeForce RTX 2070 avec 8 Go de mémoire GDDR6
+Écran : 15,6 pouces Full HD (1920 x 1080) IPS avec un taux de rafraîchissement de 144 Hz
+Mémoire vive : 16 Go DDR4 (extensible jusqu à 32 Go)
+Stockage : SSD NVMe de 512 Go
+Clavier : Rétroéclairé RGB
+Connectivité : Wi-Fi 5, Bluetooth 5.0, Ethernet Gigabit, USB Type-C, HDMI, mini DisplayPort
+Système d exploitation : Windows 10 Home',
                 'original_price' => '1200000',
                 'selling_price' => '900000',
                 'image' => 'Asus ROG Strix Scar II.jpg',
@@ -115,6 +211,229 @@ class productsTableSeeder extends Seeder
                 'meta_title' => 'msi',
                 'meta_keyword' => 'msi',
                 'meta_description' => 'Le MSI GP66 Vector est un ordinateur portable gaming haut de gamme, offrant des performances exceptionnelles grâce à son processeur Intel Core i7 de 11ème génération et sa carte graphique NVIDIA GeForce RTX 3070. Avec son écran Full HD de 15,6 pouces à taux de rafraîchissement de 144 Hz et son clavier rétroéclairé RGB, il est idéal pour les joueurs exigeants qui cherchent une expérience de jeu immersive et fluide. Sa conception robuste et ses nombreuses fonctionnalités en font également un choix populaire parmi les professionnels de la création de contenu.',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'MSI Gp62 7rex Leopard',
+                'slug' => 'MSI_Gp62_7rex_Leopard',
+                'small_description' => 'Le MSI GP62 7REX Leopard est un choix solide pour les joueurs à la recherche d un ordinateur portable de jeu abordable. Il est équipé d un processeur Intel Core i7-7700HQ et d une carte graphique NVIDIA GeForce GTX 1050 Ti pour des performances de jeu décentes. L écran Full HD avec un taux de rafraîchissement de 60 Hz offre également une expérience de jeu agréable.
+                ',
+                'description' => 'Processeur : Intel Core i7-7700HQ de 7ème génération
+Carte graphique : NVIDIA GeForce GTX 1050 Ti avec 4 Go de mémoire GDDR5
+Écran : 15,6 pouces Full HD (1920 x 1080) IPS avec un taux de rafraîchissement de 60 Hz
+Mémoire vive : 8 Go DDR4 (extensible jusqu à 32 Go)
+Stockage : SSD de 128 Go + disque dur de 1 To à 7200 tr/min
+Clavier : Rétroéclairé rouge
+Connectivité : Wi-Fi 5, Bluetooth 4.2, Ethernet Gigabit, USB Type-C, HDMI, mini DisplayPort
+Système d exploitation : Windows 10 Home',
+                'original_price' => '1200000',
+                'selling_price' => '900000',
+                'image' => 'MSI Gp62 7rex Leopard.jpg',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => 'Le MSI GP62 7REX Leopard est un choix solide pour les joueurs à la recherche d un ordinateur portable de jeu abordable. Il est équipé d un processeur Intel Core i7-7700HQ et d une carte graphique NVIDIA GeForce GTX 1050 Ti pour des performances de jeu décentes. L écran Full HD avec un taux de rafraîchissement de 60 Hz offre également une expérience de jeu agréable.
+                ',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'HP pavillon gaming17',
+                'slug' => 'HP_pavillon_gaming17',
+                'small_description' => 'Le HP Pavilion Gaming 17 est un choix solide pour les joueurs à la recherche d un ordinateur portable de jeu abordable avec un grand écran. Il est équipé d un processeur Intel Core i5-9300H et d une carte graphique NVIDIA GeForce GTX 1050 pour des performances de jeu décentes.
+                 ',
+                'description' => 'Processeur : Intel Core i5-9300H de 9ème génération
+Carte graphique : NVIDIA GeForce GTX 1050 avec 3 Go de mémoire GDDR5
+Écran : 17,3 pouces Full HD (1920 x 1080) IPS avec un taux de rafraîchissement de 60 Hz
+Mémoire vive : 8 Go DDR4 (extensible jusqu à 16 Go)
+Stockage : SSD de 512 Go
+Clavier : Rétroéclairé rouge
+Connectivité : Wi-Fi 5, Bluetooth 5.0, Ethernet Gigabit, USB Type-C, HDMI, mini DisplayPort
+Système d exploitation : Windows 10 Home',
+                'original_price' => '700000',
+                'selling_price' => '630000',
+                'image' => 'HP pavillon gaming17.jpg',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => 'Le HP Pavilion Gaming 17 est un choix solide pour les joueurs à la recherche d un ordinateur portable de jeu abordable avec un grand écran. Il est équipé d un processeur Intel Core i5-9300H et d une carte graphique NVIDIA GeForce GTX 1050 pour des performances de jeu décentes.
+                 ',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'Dell G7',
+                'slug' => 'Dell_G7',
+                'small_description' => 'Le Dell G7 est conçu pour offrir des performances de jeu exceptionnelles et une expérience utilisateur fluide grâce à ses composants haut de gamme et à son écran haute résolution avec un taux de rafraîchissement élevé. Il est équipé d un processeur Intel Core i7-9750H et d une carte graphique NVIDIA GeForce RTX 2060 Max-Q pour des performances graphiques impressionnantes. L écran Full HD avec un taux de rafraîchissement de 144 Hz offre également une expérience de jeu fluide et agréable.
+                ',
+                'description' => 'Processeur : Intel Core i7-9750H de 9ème génération
+Carte graphique : NVIDIA GeForce RTX 2060 Max-Q avec 6 Go de mémoire GDDR6
+Écran : 15,6 pouces Full HD (1920 x 1080) IPS avec un taux de rafraîchissement de 144 Hz
+Mémoire vive : 16 Go DDR4 (extensible jusqu à 32 Go)
+Stockage : SSD NVMe de 512 Go
+Clavier : Rétroéclairé RGB
+Connectivité : Wi-Fi 6, Bluetooth 5.0, Ethernet Gigabit, Thunderbolt 3, USB Type-C, HDMI, mini DisplayPort
+Système d exploitation : Windows 10 Home',
+                'original_price' => '700000',
+                'selling_price' => '630000',
+                'image' => 'Dell G7.jpg',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => 'Le Dell G7 est conçu pour offrir des performances de jeu exceptionnelles et une expérience utilisateur fluide grâce à ses composants haut de gamme et à son écran haute résolution avec un taux de rafraîchissement élevé. Il est équipé d un processeur Intel Core i7-9750H et d une carte graphique NVIDIA GeForce RTX 2060 Max-Q pour des performances graphiques impressionnantes. L écran Full HD avec un taux de rafraîchissement de 144 Hz offre également une expérience de jeu fluide et agréable.
+                ',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'Asus-ROG STRIX G17',
+                'slug' => 'Asus_ROG_STRIX_G17',
+                'small_description' => '17,3 pouce LCD-IPS (Anti-Reflets) Full HD 144Hz - AMD Ryzen 7 4800H - NVIDIA GeForce RTX 3060 Max-P 6Go GDR6 - 16 Go (2 x 8 Go) DDR4 3200Mhz - SSD M.2 512 Go PCIe Gen 3.0 - Sans Système D Exploitation',
+                'description' => 'Écran : 17,3 pouces Full HD (1920 x 1080) 144Hz LCD - IPS (Anti-Reflets)
+Puce graphique : NVIDIA GeForce RTX 3060 Max-P (130W) 6 Go GDDR6
+Processeur : AMD Ryzen™ 7 4800H 2.9 GHz de base (12M Cache, jusqu à 4,2 GHz, 8 cœurs / 16 threads)
+Mémoire vive : 16 Go DDR4 3200 MHz (2 x 8 Go), extensible jusqu à 32 Go max.
+Châssis : Aluminium (Le châssis est robuste et résistant pour supporter les exigences de performances des jeux vidéo et de tâches intensives, en ce qui concerne le matériau, il est en aluminium et est souvent utilisé pour sa légèreté et sa résistance à la corrosion.)
+Stockage : 1 x SSD de 512 Go PCIe Gen 3.0 4x NVMe M.2
+Batterie : Batterie Li-Polymère 4 cellules de 76 Whrs
+WI-FI/Bluetooth : Wi-Fi 6 (802.11ax) + Bluetooth 5.1 (double bande) 2x2; (*La version de Bluetooth peut changer en fonction des mises à jour de votre système d exploitation.) -RangeBoost
+Haut-parleurs : Haut-parleurs stéréo 2 x 2 W, Smart AMP, Technologie audio ASUS Sonic Studio 4 et DTS: X Ultra.',
+                'original_price' => '700000',
+                'selling_price' => '630000',
+                'image' => 'Asus-ROG STRIX G17.jpeg',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => '17,3 pouce LCD-IPS (Anti-Reflets) Full HD 144Hz - AMD Ryzen 7 4800H - NVIDIA GeForce RTX 3060 Max-P 6Go GDR6 - 16 Go (2 x 8 Go) DDR4 3200Mhz - SSD M.2 512 Go PCIe Gen 3.0 - Sans Système D Exploitation
+                ',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'HP Victus',
+                'slug' => 'HP Victus',
+                'small_description' => '16,1" Full HD 144Hz - NVIDIA GeForce RTX 3060 - AMD Ryzen 5 5600H - SSD 512 Go - RAM 16 Go - Windows 11
+                ',
+                'description' => 'Écran : 16.1" (40.9 cm) diagonal, IPS, micro-bords, antireflet, 250 nits, 45 % NTSC
+Fréquence de Rafraîchissement : 144Hz
+Luminosité : 250 cd/m²
+Résolution : Full HD 1920 x 1080 Pixels
+Système D exploitation : Windows 11 Famille
+Chipset : AMD
+Processeur : AMD Ryzen™ 5 5600H (jusqu’à 4,2 GHz de fréquence Boost maximale, mémoire cache L3 16 Mo , 6 cœurs, 12 threads)
+Carte Graphique : NVIDIA® GeForce RTX™ 3060 Ordinateur portable GPU (6 Go de mémoire GDDR6 dédiée)
+Stockage : SSD 512 GB PCIe® NVMe&trade TLC M.2
+Mémoire Vive :16 Go de mémoire RAM DDR4-3200 MHz (2 x 8 Go)
+Norme Réseau Sans Fil Wi-FI : Carte Realtek Wi-Fi 6 (2x2)
+Interface réseau : LAN GbE 10/100/1000 intégré
+Norme Bluetooth : Bluetooth® 5.2 (prise en charge de débits de données en gigabits)
+Webcam : Caméra HP Wide Vision HD 720p
+Haut-Parleurs : Système audio par B&O; Doubles haut-parleurs; HP Audio Boost
+Type d alimentation : Adaptateur secteur intelligent 200 W
+Type de batterie : Li-ion polymère 4 cellules de 70 W/h
+Autonomie de la batterie utilisation mixte : Jusqu à 8 heures et 45 minutes
+Lecture vidéo Autonomie de la batterie : Jusqu à 8 heures et 45 minutes
+Clavier : Argent mica, rétroéclairé, de grande taille avec pavé numérique
+Logements d extension : 1 lecteur de cartes multimédias SD multiformat
+Dimensions (L x P x H) : 37 x 26 x 2,35 cm
+Poids : 2,48 kilogrammes
+Composants : Plastique
+Couleurs : Blanc
+Garantie : Garantie 2 ans',
+                'original_price' => '786000',
+                'selling_price' => '590000',
+                'image' => 'HP Victus.png',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => '17,3 pouce LCD-IPS (Anti-Reflets) Full HD 144Hz - AMD Ryzen 7 4800H - NVIDIA GeForce RTX 3060 Max-P 6Go GDR6 - 16 Go (2 x 8 Go) DDR4 3200Mhz - SSD M.2 512 Go PCIe Gen 3.0 - Sans Système D Exploitation
+                ',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'asus tuf gaming a17',
+                'slug' => 'asus_tuf_gaming_a15',
+                'small_description' => '15.6" Dalle IPS FHD 144 Hz - NVIDIA GeForce RTX 3050 Ti - Intel Core i5-11400H - SSD M.2 512 GO - 16 GO DDR4 3200Mhz - Windows 11 Famille
+                ',
+                'description' => 'Écran : 16.1" (40.9 cm) diagonal, IPS, micro-bords, antireflet, 250 nits, 45 % NTSC
+Fréquence de Rafraîchissement : 144Hz
+Luminosité : 250 cd/m²
+Résolution : Full HD 1920 x 1080 Pixels
+Système D exploitation : Windows 11 Famille
+Chipset : AMD
+Processeur : AMD Ryzen™ 5 5600H (jusqu’à 4,2 GHz de fréquence Boost maximale, mémoire cache L3 16 Mo , 6 cœurs, 12 threads)
+Carte Graphique : NVIDIA® GeForce RTX™ 3060 Ordinateur portable GPU (6 Go de mémoire GDDR6 dédiée)
+Stockage : SSD 512 GB PCIe® NVMe&trade TLC M.2
+Mémoire Vive :16 Go de mémoire RAM DDR4-3200 MHz (2 x 8 Go)
+Norme Réseau Sans Fil Wi-FI : Carte Realtek Wi-Fi 6 (2x2)
+Interface réseau : LAN GbE 10/100/1000 intégré
+Norme Bluetooth : Bluetooth® 5.2 (prise en charge de débits de données en gigabits)
+Webcam : Caméra HP Wide Vision HD 720p
+Haut-Parleurs : Système audio par B&O; Doubles haut-parleurs; HP Audio Boost
+Type d alimentation : Adaptateur secteur intelligent 200 W
+Type de batterie : Li-ion polymère 4 cellules de 70 W/h
+',
+                'original_price' => '786000',
+                'selling_price' => '590000',
+                'image' => 'asus_tuf_gaming_a17.png',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => '15.6" Dalle IPS FHD 144 Hz - NVIDIA GeForce RTX 3050 Ti - Intel Core i5-11400H - SSD M.2 512 GO - 16 GO DDR4 3200Mhz - Windows 11 Famille
+                ',
+            ],
+            [
+                'cate_id' => '2',
+                'name' => 'asus tuf gaming a15',
+                'slug' => 'asus_tuf_gaming_a15',
+                'small_description' => '17.3" Dalle IPS FHD 144Hz - NVIDIA GeForce RTX 3070 Max-P TGP 140w 8Go GDDR6 - Intel Core i7-12700H - SSD M.2 PCIe 3.0 512 GO - 16 GO DDR5 4800Mhz - Sans Système D Exploitation
+                ',
+                'description' => 'Écran : 17.3" pouces LCD - IPS (Anti-Reflets) 144Hz
+
+Résolution : Full HD 1920 x 1080P (16/9)
+
+Sans Système D exploitation
+
+Processeur : Intel Core I7-12700H (3.5Ghz/4.7Ghz)
+
+Carte Graphique : NVIDIA GeForce RTX 3070 Max-P 8Go GDDR6 (1460Mhz/140W)
+
+Mémoire Vive : 16 Go (2 x 8Go) DDR5 4800Mhz
+
+Stockage : 512 Go SSD M.2 PCIe 4.0
+
+Clavier : Rétroéclairé / Touchpad / Pavé Numérique
+
+Audio : Haut-Parleurs Stéréo / Dolby Atmos / Hi-Res Audio
+
+Norme WI-FI : 802.11AX (WIFI 6)
+
+Norme Bluetooth : 5.2',
+                'original_price' => '1100000',
+                'selling_price' => '910000',
+                'image' => 'asus_tuf_gaming_a15.png',
+                'qty' => '11',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '1',
+                'meta_title' => 'msi',
+                'meta_keyword' => 'msi',
+                'meta_description' => '17.3" Dalle IPS FHD 144Hz - NVIDIA GeForce RTX 3070 Max-P TGP 140w 8Go GDDR6 - Intel Core i7-12700H - SSD M.2 PCIe 3.0 512 GO - 16 GO DDR5 4800Mhz - Sans Système D Exploitation
+                ',
             ],
             [
                 'cate_id' => '3',
@@ -268,6 +587,171 @@ class productsTableSeeder extends Seeder
                 'meta_title' => 'airpod',
                 'meta_keyword' => 'airpod',
                 'meta_description' => 'des écouteurs sans fil haut de gamme conçus pour offrir une expérience d écoute supérieure avec une qualité sonore exceptionnelle, une réduction active du bruit et une autonomie de batterie allant jusqu à 20 heures. Ils sont dotés de coussinets d oreille doux et confortables et d un bandeau en maille respirant pour un port prolongé.',
+            ],
+            [
+                'cate_id' => '7',
+                'name' => 'Iphone 11 pochette',
+                'slug' => 'Iphone_11_pochette',
+                'small_description' => 'Protégez votre iPhone 11 avec style grâce à cette pochette blanche élégante et pratique. Fabriquée à partir de matériaux de qualité supérieure, comme le silicone doux et résistant, cette pochette est conçue pour protéger votre téléphone des rayures, des chutes et des dommages causés par l usure quotidienne.',
+                'description' => 'La texture douce et agréable au toucher de cette pochette offre une prise en main confortable et sécurisée, tandis que sa conception permet un accès facile à tous les ports et boutons de votre iPhone 11, ainsi qu à la caméra et au flash.
+ En plus de protéger votre téléphone, cette pochette blanche ajoute une touche de style et de personnalité à votre iPhone 11. Elle est un accessoire de mode tendance qui complète le design élégant de votre téléphone, tout en le protégeant efficacement.',
+                'original_price' => '4000',
+                'selling_price' => '3500',
+                'image' => 'pochette 11.webp',
+                'qty' => '13',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '0',
+                'meta_title' => 'pochette',
+                'meta_keyword' => 'pochette',
+                'meta_description' => 'La texture douce et agréable au toucher de cette pochette offre une prise en main confortable et sécurisée, tandis que sa conception permet un accès facile à tous les ports et boutons de votre iPhone 11, ainsi qu à la caméra et au flash.
+
+    En plus de protéger votre téléphone, cette pochette blanche ajoute une touche de style et de personnalité à votre iPhone 11. Elle est un accessoire de mode tendance qui complète le design élégant de votre téléphone, tout en le protégeant efficacement.',
+            ],
+            [
+                'cate_id' => '7',
+                'name' => 'Iphone 12 pochette',
+                'slug' => 'Iphone_12_pochette',
+                'small_description' => 'Offrez une protection élégante et efficace à votre iPhone 12 avec cette pochette noire pratique et tendance. Conçue spécialement pour l iPhone 12, cette pochette est fabriquée à partir de matériaux de qualité supérieure, comme le cuir véritable ou le silicone doux et résistant.',
+                'description' => 'Cette pochette noir pour iPhone 12 offre une prise en main confortable et sécurisée grâce à sa texture douce et agréable au toucher. Elle est également conçue pour permettre un accès facile à tous les ports et boutons de votre iPhone 12, ainsi qu à la caméra et au flash.
+ En plus de protéger votre téléphone des rayures, des chutes et des dommages causés par l usure quotidienne, cette pochette noire ajoute une touche de sophistication à votre iPhone 12. Elle est un accessoire de mode tendance qui complète parfaitement le design élégant de votre téléphone.',
+                'original_price' => '4000',
+                'selling_price' => '3500',
+                'image' => 'pochette 12.webp',
+                'qty' => '13',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '0',
+                'meta_title' => 'pochette',
+                'meta_keyword' => 'pochette',
+                'meta_description' => 'Cette pochette noir pour iPhone 12 offre une prise en main confortable et sécurisée grâce à sa texture douce et agréable au toucher. Elle est également conçue pour permettre un accès facile à tous les ports et boutons de votre iPhone 12, ainsi qu à la caméra et au flash.
+
+    En plus de protéger votre téléphone des rayures, des chutes et des dommages causés par l usure quotidienne, cette pochette noire ajoute une touche de sophistication à votre iPhone 12. Elle est un accessoire de mode tendance qui complète parfaitement le design élégant de votre téléphone.',
+            ],
+            [
+                'cate_id' => '7',
+                'name' => 'Iphone 13 pochette',
+                'slug' => 'Iphone_13_pochette',
+                'small_description' => 'Donnez une touche de couleur à votre iPhone 12 avec cette pochette rouge et bleu, pratique et tendance. Cette pochette est spécialement conçue pour protéger votre iPhone 12 des rayures, des chutes et des dommages causés par l usure quotidienne, tout en ajoutant une touche de personnalité à votre téléphone.',
+                'description' => 'Fabriquée à partir de matériaux de qualité supérieure, comme le silicone doux et résistant, cette pochette offre une prise en main confortable et sécurisée. Elle est conçue pour permettre un accès facile à tous les ports et boutons de votre iPhone 12, ainsi qu à la caméra et au flash.
+
+    Avec son design coloré rouge et bleu, cette pochette pour iPhone 12 est un accessoire de mode tendance qui complète parfaitement le design élégant de votre téléphone. Elle est également un excellent choix pour ceux qui cherchent à personnaliser leur téléphone et à le rendre unique.',
+                'original_price' => '4000',
+                'selling_price' => '3500',
+                'image' => 'pochette 13.webp',
+                'qty' => '13',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '0',
+                'meta_title' => 'pochette',
+                'meta_keyword' => 'pochette',
+                'meta_description' => 'Fabriquée à partir de matériaux de qualité supérieure, comme le silicone doux et résistant, cette pochette offre une prise en main confortable et sécurisée. Elle est conçue pour permettre un accès facile à tous les ports et boutons de votre iPhone 12, ainsi qu à la caméra et au flash.
+
+    Avec son design coloré rouge et bleu, cette pochette pour iPhone 12 est un accessoire de mode tendance qui complète parfaitement le design élégant de votre téléphone. Elle est également un excellent choix pour ceux qui cherchent à personnaliser leur téléphone et à le rendre unique.',
+            ],
+            [
+                'cate_id' => '8',
+                'name' => 'Canvio Basics 4 To - Noir',
+                'slug' => 'Canvio_Basics_4_To_Noir',
+                'small_description' => 'Disque Dur Externe 4 To',
+                'description' => 'Toshiba Canvio Basics. Capacité disque dur: 4000 Go, Taille du disque dur: 2.5"". Version USB: 3.0 (3.1 Gen 1). Couleur du produit: Noir
+
+UN ENDROIT DE STOCKAGE POUR TOUS VOS FICHIERS
+Stockage grande capacité dans un boîtier compact et pratique, à la finition mate noire. Disponibles en différentes capacités (jusqu à 4 To), les disques durs Canvio Basics sont parfaits pour le stockage des données, la musique, les films et les photos. Alimentés par USB, ces appareils peuvent être utilisés avec un seul câble USB connecté à un ordinateur de bureau ou un ordinateur portable.
+
+    VOTRE COMPAGNON COMPACT
+Le Canvio Basics est compact et de style classique. Avec son boîtier fin et compact, et sa partie supérieure plate, le disque dur Canvio Basics est véritablement portable : il est facile à transporter et à stocker dans une poche ou un sac.
+
+    TRANSFERTS HAUT DÉBIT
+Grâce à la technologie USB 3.0, ces disques durs portables sont beaucoup plus rapides que les appareils USB 2.0 avec lesquels ils restent compatibles. Lorsque vous organisez vos fichiers, les transferts sont très rapides.
+
+    FONCTIONNEMENT PLUG-AND-PLAY SIMPLE
+Fonctionnement plug-and-play simple. Prêts à être utilisés avec Microsoft Windows, sans aucune installation de logiciel. Glisser-déposer intuitif des fichiers depuis et vers votre ordinateur de bureau ou votre ordinateur portable.
+
+    VOS DONNÉES EN LIEU SÛR
+Avec plus de 50 ans d expérience dans la technologie des disques durs et des normes de qualité sans égales, les disques durs portables de Toshiba offrent un emplacement fiable et sécurisé pour vos fichiers, où que vous mènent vos déplacements.',
+                'original_price' => '78000',
+                'selling_price' => '70000',
+                'image' => 'Canvio_Basics_4_To_Noir.jpg',
+                'qty' => '13',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '0',
+                'meta_title' => 'Disque_dur',
+                'meta_keyword' => 'Disque_dur',
+                'meta_description' => 'Disque Dur Externe 4 To',
+            ],
+            [
+                'cate_id' => '8',
+                'name' => 'Canvio Basics 2 To',
+                'slug' => 'Canvio_Basics_2_To',
+                'small_description' => 'Disque Dur Externe 4 To',
+                'description' => 'Transférez vos fichiers rapidement avec le port USB 3.0
+grande vitesse et stockez jusqu’à 3 To de données sur les
+disques durs externes Canvio Basics. Ces appareils sont
+prêts à être utilisés avec Microsoft Windows, sans aucune
+installation de logiciel. Le stockage de tous vos fichiers
+favoris n’a jamais été aussi facile. Que vous soyez à votre
+bureau ou en déplacement, sa conception intemporelle avec
+finition mate est toujours élégante. Le disque dur vous
+permet également de vous connecter à des anciens
+matériels grâce à sa compatibilité USB 2.0.
+
+
+
+Interface USB 3.0 (compatible USB 2.0)
+Vitesse de transfert max. ~ 5 Gbits/s
+Système de fichiers NTFS (Microsoft Windows)
+Nécessite un reformatage
+pour Mac OS
+Alimentation Bus USB (max. 900 mA)
+Configuration système
+requise
+Système de fichiers NTFS
+formaté pour Microsoft
+Windows 10, Windows 8.1,
+Windows 7
+Un port disponible USB 3.0 ou
+USB 2.0
+Garantie 2 ans
+Boîtier Mat
+Dimensions 500 Go, 1 To, 2 To : 78 x 109
+x 14 mm
+3 To (conception différente) :
+119 × 70 × 20,5 mm
+Poids 500 GB: 140 g
+1 TB, 2 TB: 149 g
+Contenu du coffret Canvio Basics
+Câble USB 3.0 (Type-A-Micro-
+B)',
+                'original_price' => '47000',
+                'selling_price' => '41000',
+                'image' => 'Canvio_Basics_2_To.png',
+                'qty' => '13',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '0',
+                'meta_title' => 'Disque_dur',
+                'meta_keyword' => 'Disque_dur',
+                'meta_description' => 'Disque Dur Externe 2 To',
+            ],
+            [
+                'cate_id' => '8',
+                'name' => 'WD ELEMENTS 4 To',
+                'slug' => 'WD_ELEMENTS_4_To',
+                'small_description' => 'Disque Dur Externe 4 To',
+                'description' => 'Le Western Digital Elements Portable 4 To USB 3.0 est un disque dur portable, simple et de grande qualité qui est léger et facile à porter. Il suffit de le brancher à un port USB pour commencer à enregistrer vos photos, vos musiques, vos vidéos et vos fichiers.
+                ',
+                'original_price' => '47000',
+                'selling_price' => '41000',
+                'image' => 'WD_ELEMENTS_4_To.jpg',
+                'qty' => '13',
+                'tax' => '0',
+                'status' => '0',
+                'trending' => '0',
+                'meta_title' => 'Disque_dur',
+                'meta_keyword' => 'Disque_dur',
+                'meta_description' => 'Disque Dur Externe 4 To',
             ],
 
         ]);

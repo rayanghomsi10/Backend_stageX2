@@ -79,7 +79,7 @@
     <script>
         $('.featured-carousel').owlCarousel({
             loop:true,
-            margin:10,
+            margin:5,
             nav:true,
             dots:false,
             responsive:{
@@ -89,7 +89,7 @@
                 600:{
                     items:2
                 },
-                1000:{
+                1200:{
                     items:3
                 },
                 1300:{
