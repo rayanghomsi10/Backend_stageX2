@@ -33,7 +33,7 @@ class productsTableSeeder extends Seeder
            ],
             [
                 'cate_id' => '1',
-                'name' => 'Galaxy S21 FE - 5G - 8/256 Go - Graphite',
+                'name' => 'Samsung Galaxy S21 FE - 5G - 8/256 Go - Graphite',
                 'slug' => 'Galaxy_S21',
                 'small_description' => 'Smartphone 6,4" Super AMOLED FHD+ 120Hz - Snapdragon 888 - 5G - RAM 8 Go - 4500 mAh - Charge rapide 25W - 32MP - Android 12
 Une expérience épique pour tous les fans : Grand écran fluide 6,4” -120Hz / Des photos lumineuses de jour comme de nuit / Space Zoom x30 Zoom Optique Hybride x3 / Processeur Puissant pour des performances épiques / Batterie 4500 mAh et charge sans fil.
@@ -73,7 +73,7 @@ Une expérience épique pour tous les fans : Grand écran fluide 6,4” -120Hz /
             ],
             [
                 'cate_id' => '1',
-                'name' => 'Galaxy S23 - 5G - 8/256 Go - Graphite',
+                'name' => 'Samsung Galaxy S23 - 5G - 8/256 Go - Graphite',
                 'slug' => 'Galaxy_S23',
                 'small_description' => 'Smartphone 6,4" Super AMOLED FHD+ 120Hz - Snapdragon 888 - 5G - RAM 8 Go - 4500 mAh - Charge rapide 25W - 32MP - Android 12
 Une expérience épique pour tous les fans : Grand écran fluide 6,4” -120Hz / Des photos lumineuses de jour comme de nuit / Space Zoom x30 Zoom Optique Hybride x3 / Processeur Puissant pour des performances épiques / Batterie 4500 mAh et charge sans fil.

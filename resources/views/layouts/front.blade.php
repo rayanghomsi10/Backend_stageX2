@@ -58,7 +58,9 @@
     <div class="content" >
         @yield('content')
     </div>
+
 <div>
+
 
 {{--    <div style="margin-bottom: 500px">--}}
 {{--        @include('layouts.inc.frontendfooter')--}}
