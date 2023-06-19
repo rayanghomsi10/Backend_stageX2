@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('address1');
-            $table->string('address2');
-            $table->string('city');
-            $table->string('state');
-            $table->string('country');
-            $table->string('pincode');
+            $table->string('address2')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('country')->nullable();
+            $table->string('pincode')->nullable();
             $table->string('total_price');
             $table->tinyInteger('status')->default('0');
             $table->string('message')->nullable();

@@ -3,16 +3,20 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{asset('asset/images/laptop-5673901_1280.jpg')}}" class="d-block w-100" style="width: 100%; height: 700px;" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('asset/images/turntable-1109588_1280.jpg')}}" class="d-block w-100" style="width: 100%; height: 700px;" alt="...">
+            <img src="{{asset('asset/images/casque-audio.webp')}}" class="d-block w-100" style="width: 100%; height: 700px;" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('asset/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg')}}" class="d-block w-100" style="width: 100%; height: 700px;" alt="...">
+            <img src="{{asset('asset/images/smartphone-android.webp')}}" class="d-block w-100" style="width: 100%; height: 700px;" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{asset('asset/images/smartphone-ios.webp')}}" class="d-block w-100" style="width: 100%; height: 700px;" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

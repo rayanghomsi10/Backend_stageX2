@@ -14,6 +14,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
+                    <th>role</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -24,6 +25,7 @@
                         <td>{{$item->name.' '.$item->lname}}</td>
                         <td>{{$item->email}}</td>
                         <td>{{$item->phone}}</td>
+                        <td>{{ $item->role }}</td>
                         <td>
                             <a href="{{url('view-users/'.$item->id)}}" class="btn btn-primary btn-sm">view</a>
                         </td>

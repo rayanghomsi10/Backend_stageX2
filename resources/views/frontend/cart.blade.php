@@ -22,7 +22,7 @@
     </div>
 
     <div class="container my-5" style="background-color: #6486ff">
-        <div class="card shadow product_data">
+        <div class="card shadow product_data cartitems">
             @if($cartitems->count() > 0)
             <div class="card-body">
                 @php $total = 0; @endphp
@@ -79,27 +79,7 @@
 
     <script>
         $(document).ready(function () {
-        $('.delete-cart-item').click(function (e) {
-            e.preventDefault();
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
 
-            var prod_id = $(this).closest('.product_data').find('.prod_id').val();
-            $.ajax({
-                method: "POST",
-                url: "delete-cart-item",
-                data: {
-                    '_token': '{{ csrf_token() }}',
-                    'prod_id': prod_id,
-                },
-                success: function (response) {
-                    swal("", response.status, "Succes");
-                }
-            });
-        });
 
             $('.increment-btn').click(function (e) {
                 e.preventDefault();

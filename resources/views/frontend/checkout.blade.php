@@ -151,13 +151,13 @@
     <div class="container mt-5">
         <main>
             <form action="{{ url('place-order') }} " method="POST">
-                @csrf
+                {{ csrf_field() }}
 
             <div class="row g-5">
                 <div class="col-md-5 col-lg-4 order-md-last">
 
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-primary">Detail de la commande</span>
+                        <span class="text-dark">Detail de la commande</span>
                     </h4>
                     <ul class="list-group mb-3">
                         @php $total = 0; @endphp
@@ -229,6 +229,9 @@
                             <div class="col-12">
                                 <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
                                 <input type="text" class="form-control" name="address2" value="{{ Auth::user()->address2 }}" placeholder="Entrer votre seconde adresse si vous en avez">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
                             </div>
                             <div class="col-12">
                                 <label for="address2" class="form-label">Pays</label>
@@ -255,19 +258,6 @@
                         {{--<h4 class="mb-3">Payment</h4>
 
                         <div class="my-3">
-                            <div class="form-check">
-                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                                <label class="form-check-label" for="credit">Credit card</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="debit">Debit card</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="paypal">PayPal</label>
-                            </div>
-                        </div>
 
                         <div class="row gy-3">
                             <div class="col-md-6">
@@ -306,11 +296,43 @@
 
                         <hr class="my-4">
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
---}}
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>--}}
+
                 </div>
             </div>
             </form>
         </main>
+@endsection
+
+@section('script')
+    <script>
+        const form = document.querySelector('form');
+
+        // Ajout d'un écouteur d'événement sur la soumission du formulaire
+        form.addEventListener('submit', (event) => {
+            // Récupération de tous les champs du formulaire
+            const fields = form.querySelectorAll('input[type="text"]');
+
+            // Vérification que tous les champs sont remplis
+            let isFieldsFilled = true;
+            fields.forEach((field) => {
+                if (field.value.trim() === '') {
+                    isFieldsFilled = false;
+                    field.classList.add('is-invalid');
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+
+            // Si tous les champs sont remplis, on envoie le formulaire
+            if (isFieldsFilled) {
+                // Envoi du formulaire
+                form.submit();
+            } else {
+                // Empêche l'envoi du formulaire
+                event.preventDefault();
+            }
+        });
+    </script>
 @endsection
 
