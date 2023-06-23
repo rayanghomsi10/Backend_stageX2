@@ -25,7 +25,7 @@
                     <td><img src="{{asset('./asset/uploids/category/'.$item->image)}}" alt="image" class="cate-image"> </td>
                     <td>
                         <a href="{{url('edit-category/'.$item->id)}}" class="btn btn-primary">Edit</a>
-                        <a href="{{url('delete-category/'.$item->id)}}" class="btn btn-danger">Delete</a>
+{{--                        <a href="{{url('delete-category/'.$item->id)}}" class="btn btn-danger">Delete</a>--}}
                     </td>
                 </tr>
                 @endforeach

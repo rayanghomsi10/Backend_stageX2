@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('state')->nullable();
             $table->string('country')->nullable();
             $table->string('pincode')->nullable();
-            $table->string('role')->default('user');
+            $table->string('role')->default('user')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
