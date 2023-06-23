@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:;">
+                    <a class="nav-link" href="{{ url('/private') }}">
                         <i class="material-icons"><ion-icon name="today-outline"></ion-icon></i>
                         <p class="d-lg-none d-md-block">
                             Stats
@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="{{ url('/') }}" >
-                        <i class="material-icons">Home</i>
+                        <i class="material-icons"><ion-icon name="home-outline"></ion-icon></i>
                         <p class="d-lg-none d-md-block">
                             Some Actions
                         </p>
