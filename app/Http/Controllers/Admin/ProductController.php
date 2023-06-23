@@ -63,7 +63,7 @@ class ProductController extends Controller
         $products->meta_keyword = $request->input('meta_keyword');
         $products->meta_description = $request->input('meta_description');
         $products->save();
-        return redirect('products')->with('status', "Produit ajouter");
+        return redirect('products')->with('status', "Produit ajouté");
     }
 
     public function edit($id)

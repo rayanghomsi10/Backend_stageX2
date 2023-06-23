@@ -52,7 +52,7 @@
                         @if($products->qty >= 1)
                             <label class="badge bg-success">En stock</label>
                         @else
-                            <label class="badge bg-danger">Fini</label>
+                            <label class="badge bg-danger">En rupture de stock</label>
                         @endif
                         <div class="row mt-2">
                             <div class="col-md-3">
@@ -67,11 +67,11 @@
                             <div class="col-md-10">
                                 <br/>
                                 @if($products->qty >= 1)
-                                    <a href="{{ url('cart') }}" type="button" class="btn btn-primary addtocartbtn me-3 float-start">panier <ion-icon name="cart-outline"></ion-icon></a>
+                                    <a href="{{ url('cart') }}" type="button" class="btn btn-primary addtocartbtn me-3 float-start">Panier <ion-icon name="cart-outline"></ion-icon></a>
                                 @else
 
                                 @endif
-                                <button type="button" class="btn btn-success addTowishlist me-3 float-start">Wishlist <ion-icon name="heart-outline"></ion-icon></button>
+                                <button type="button" class="btn btn-success addTowishlist me-3 float-start">Favoris <ion-icon name="star-outline"></ion-icon></button>
                             </div>
                         </div>
                     </div>

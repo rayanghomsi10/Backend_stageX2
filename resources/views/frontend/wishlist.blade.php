@@ -50,8 +50,11 @@
                                 @endif
                             </div>
                             <div class="col-md-2 my-auto">
-                                <button class="btn addtocartbtn btn-primary"><ion-icon name="cart"></ion-icon>Ajouter au panier</button>
-                            </div>
+                                @if($item->products->qty >= 1)
+                                    <a href="{{ url('cart') }}" type="button" class="btn btn-primary addtocartbtn me-3 float-start">Panier <ion-icon name="cart-outline"></ion-icon></a>
+                                @else
+
+                                @endif                            </div>
                             <div class="col-md-2 my-auto">
                                 <button class="btn btn-danger remove-wishlist-item"><ion-icon name="trash-outline"></ion-icon>Delete</button>
                             </div>

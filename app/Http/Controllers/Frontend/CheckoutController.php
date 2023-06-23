@@ -21,7 +21,7 @@ class CheckoutController extends Controller
             if (!Product::where('id', $item->prod_id)->where('qty', '>=', $item->prod_qty)->exists())
             {
                 $removeitem = Cart::where('user_id', Auth::id())->where('prod_id',$item->prod_id);
-                $removeitem->delete();
+//                $removeitem->delete();
             }
         }
         $cartitems= Cart::where('user_id', Auth::id())->get();
@@ -119,9 +119,6 @@ class CheckoutController extends Controller
         } else {
             return redirect()->back()->withErrors($validatedData);
         }
-
-
-
 
     }
 }

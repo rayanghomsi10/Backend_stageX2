@@ -16,7 +16,7 @@ class FrontendController extends Controller
             $role=Auth()->user()->role;
 
             if ($role=='user'){
-                return redirect('/')->with('status', "Bien connecter");
+                return redirect('/')->with('status', "Bien connecté");
             }
             elseif ($role=='admin'){
                 return view('admin.index')->with('status', "Bienvenue Administrateur");

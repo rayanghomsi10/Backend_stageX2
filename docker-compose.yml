@@ -1,0 +1,25 @@
+version : "3"
+services:
+    labfilee-mail:
+        image: maildev/maildev
+        container_name: eshop-email
+        ports:
+            - "1080:1080"
+            - "1025:1025"
+
+    eshop-db:
+        image: mysql:5.7.22
+        container_name: eshop-db
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: shop
+            MYSQL_USER: rayan
+            MYSQL_PASSWORD: rayan
+            MYSQL_ROOT_PASSWORD: rayan
+        volumes:
+            - dbdata:/var/lib/mysql
+
+volumes:
+    dbdata:
+        driver: local
