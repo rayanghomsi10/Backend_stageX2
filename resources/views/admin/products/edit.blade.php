@@ -69,7 +69,7 @@
                         <textarea name="meta_description"   rows="2" class="form-control">{{$products->small_description}}</textarea>
                     </div>
                     @if($products->image)
-                        <img src="{{asset('./asset/uploids/products/'.$products->image)}}" alt="cat-image">
+                        <img src="{{asset('./asset/uploids/products/'.$products->image)}}" width="300px" height="400px" alt="prod-image">
                     @endif
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control">

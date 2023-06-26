@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-
-
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/evenstyle.css')}}">

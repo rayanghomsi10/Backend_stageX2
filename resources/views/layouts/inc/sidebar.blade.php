@@ -45,12 +45,12 @@
                     <p>Commandes</p>
                 </a>
             </li>
-            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('users') ? 'active':'' }} ">
+          {{--  <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('users') ? 'active':'' }} ">
                 <a class="nav-link" href="{{url('users')}}">
                     <i class="material-icons"><ion-icon name="person"></ion-icon></i>
                     <p>Users</p>
                 </a>
-            </li>
+            </li>--}}
 
         </ul>
     </div>
