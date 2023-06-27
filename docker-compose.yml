@@ -1,0 +1,65 @@
+version: "3.8"
+services:
+    eshop:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: app:0.1
+        container_name: eshop
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: eshop
+            SERVICE_TAGS: dev
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
+            - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+        networks:
+            - app-network
+
+    webserver:
+        image: nginx:alpine
+        container_name: webserver
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./:/var/www
+            - ./nginx/conf.d/:/etc/nginx/conf.d/
+        networks:
+            - app-network
+
+    db-dev:
+        image: mysql:5.7
+        container_name: db-dev
+        restart: unless-stopped
+        tty: true
+        environment:
+            - MYSQL_DATABASE=eshop
+            - MYSQL_ROOT_PASSWORD=4705
+            - MYSQL_ROOT_HOST=%
+        ports:
+            - 3306:3306
+        volumes:
+            - eshopdata:/var/lib/mysql
+            - ./mysql/my.cnf:/etc/mysql/my.cnf
+        networks:
+            - app-network
+
+    app-mail:
+        image: maildev/maildev
+        container_name: app-mail
+        ports:
+            - "1080:1080"
+        networks:
+            - app-network
+volumes:
+    eshopdata:
+        driver: local
+
+networks:
+    app-network:
+        driver: bridge
