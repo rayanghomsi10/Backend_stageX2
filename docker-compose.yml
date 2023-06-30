@@ -1,15 +1,15 @@
 version: "3.8"
 services:
-    app:
+    eshop:
         build:
             context: .
             dockerfile: Dockerfile
-        image: ecomapp
-        container_name: app
+        image: eshop
+        container_name: eshop
         restart: unless-stopped
         tty: true
         environment:
-            SERVICE_NAME: app
+            SERVICE_NAME: eshop
             SERVICE_TAGS: dev
         working_dir: /var/www
         volumes:
@@ -32,33 +32,32 @@ services:
         networks:
             - app-network
 
-    ecom-db:
+    db-dev:
         image: mysql:5.7
-        container_name: ecom-db
+        container_name: db-dev
         restart: unless-stopped
         tty: true
         environment:
-            MYSQL_DATABASE: shop
-            MYSQL_USER: rayan
-            MYSQL_PASSWORD: rayan
-            MYSQL_ROOT_PASSWORD: "rayan"
+            - MYSQL_DATABASE=eshop
+            - MYSQL_ROOT_PASSWORD=4705
+            - MYSQL_ROOT_HOST=%
         ports:
             - 3306:3306
         volumes:
-            - dbdata:/var/lib/mysql
+            - eshopdata:/var/lib/mysql
             - ./mysql/my.cnf:/etc/mysql/my.cnf
         networks:
             - app-network
 
-    ecom-mail:
+    app-mail:
         image: maildev/maildev
-        container_name: ecom-mail
+        container_name: app-mail
         ports:
             - "1080:1080"
         networks:
             - app-network
 volumes:
-    dbdata:
+    eshopdata:
         driver: local
 
 networks:
