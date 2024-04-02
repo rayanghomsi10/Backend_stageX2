@@ -1,0 +1,36 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkout-form label{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.checkout-form input{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.order-details label{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.order-details div{
+    font-size: 14px;
+    padding: 5px !important;
+}
+
+.search-bar{
+    width: 300px;
+    margin-left: 5%;
+}
+
+.ui-menu{
+    z-index: 2000 !important;
+}
+
+

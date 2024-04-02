@@ -4,7 +4,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        image: app:0.1
+        image: eshop
         container_name: eshop
         restart: unless-stopped
         tty: true
